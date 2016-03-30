@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+
+<script>
+
+    function numBtn_Click(sender)
+    {
+        var a = parseInt(txtA.value);
+        var b = parseInt(txtB.value);
+        var Op   = txtOp.value;
+
+        var param = "num1="+txtA.value+"&num2="+txtB.value+"&op="+Op;
+
+        var con = new XMLHttpRequest();
+        con.open('GET', 'ff.php?'+param, true);
+        con.send();
+        txtResalt.value = con.responseText;
+
+
+        // 4. Если код ответа сервера не 200, то это ошибка
+        if (con.status != 200)
+        {
+            // обработать ошибку
+            alert( con.status + ': ' + con.statusText ); // пример вывода: 404: Not Found
+        }
+    }
+
+</script>
+</body>
+</html>

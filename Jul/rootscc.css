@@ -1,0 +1,73 @@
+:root{
+    background-color: rgb(56,41,48);
+}
+body {
+    background-color: rgba(255, 255, 255, .9);
+    margin: 0 auto;
+    min-height: 350px;
+    width: 1000px;
+}
+header {
+    background-color: #373737;
+    color: #fff;
+    height: 160px;
+    padding: 10px 50px;
+}
+figure {
+    float:left;
+}
+nav {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    height: 56px;
+}
+menu {
+    padding: 0;
+}
+nav ul li {
+    float:left;
+    margin-right:22px
+}
+article {
+    float: left;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    width: 74%;
+    overflow: hidden;
+}
+main {
+    margin: 0 auto;
+    width: 1170px;
+    display: block;
+}
+section {
+    background-color:#eee;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+aside{
+    float: right;
+    padding-left: 15px;
+    width: 25%;
+    display: block;
+    overflow: hidden;
+    position:relative;
+}
+
+footer {
+    background-color: #373737;
+    clear: both;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+footer small a {
+    color: #eff;
+}
+.add{
+    background-color: #373737;
+}
+footer, nav, header, section, aside {
+    display: block
+}

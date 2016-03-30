@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <svg xmlns="http://www.w3.org/2000/svg" id="svgList" width="700" height="440" onmousedown = "clickListener()">
+
+    </svg>
+</head>
+<body>
+<script>
+    var SVG = document.getElementById("svgList");
+    var svgNS = "http://www.w3.org/2000/svg";
+    setInterval(move, 40);
+
+    function clickListener()
+    {
+        addBall( event.pageX, event.pageY, 30 );
+
+    }
+    function addBall (x, y, radius)
+    {
+        var circle = document.createElementNS(svgNS, 'circle');
+        circle.setAttribute('cx',x);
+        circle.setAttribute('cy',y );
+        circle.setAttribute('r', radius);
+        circle.setAttribute('fill', get_random_color());
+        SVG.appendChild(circle);
+    }
+    function move()
+    {
+        for(var i=0; i<SVG.childElementCount;i++)
+        {
+            SVG.childNodes[i].attr('cx', this.cx+10).attr('cy', this.cy+10);
+        }
+    }
+
+    function get_random_color()
+    {
+        function c()
+        {
+            return Math.floor(Math.random()*256).toString(16)
+        }
+        return "#"+c()+c()+c();
+    }
+    function randomFromTo(from, to)
+    {
+        return Math.floor(Math.random() * (to - from + 1) + from);
+    }
+
+</script>
+</body>
+</html>

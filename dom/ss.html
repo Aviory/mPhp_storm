@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>QUnit Example</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.22.0.css">
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script src="//code.jquery.com/qunit/qunit-1.22.0.js"></script>
+<script src="jQuery.js"></script>
+<script src="test.js"></script>
+<table>
+    <thead>
+    <tr>
+        <th >id</th><th>fname</th><th>lname</th><th>age</th>
+    </tr>
+    </thead>
+    <tbody id="tPerson">
+    <tr id="rowTmp">
+        <td><input type="text"/></td>
+        <td><input type="text"/></td>
+        <td><input type="text"/></td>
+        <td><input type="text"/></td>
+    </tr>
+    </tbody>
+</table>
+<br />
+<input type="text" id="txtId" />
+<input type="text" id="txtFname"  />
+<input type="text" id="txtLname" />
+<input type="text" id="txtAge" /><br />
+<br />
+<button onclick="addFirst()">addFirst </button>
+<button onclick="delFirst()" >delFirst </button><br>
+<button onclick="addMidle()" >addMidle </button>
+<button onclick="delMidle()" >delMidle </button><br>
+<button onclick="addLast()" >addlLast </button>
+<button onclick="delLast()" >delLast </button><br>
+<button onclick="tableToXML()">SaveToXML </button>
+<button onclick="toLocalStorageJSON()" >SaveToJSON </button><br>
+<button onclick="" >loadXML </button>
+<button onclick="fromJSON()" >LoadJSON </button><br>
+</body>
+</html>

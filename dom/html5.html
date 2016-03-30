@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>html5/jQuery/qUnit</title>
+   <style>
+    aside{
+        background-color: bisque;
+    }
+    header{
+        background-color: aliceblue;
+        width:1255px;
+        height:500px;
+    }
+
+    #footerInner{
+        background-color: brown;
+        width:455px;
+        height:200px;
+    }
+    footer, nav, header, section, aside {
+        display: block
+    }
+    #tableBox{
+        background-color: grey;
+        width:715px;
+        height:490px;
+        position:absolute;
+        left:120px;
+        top:20px;
+    }
+   #tableEdite{
+       width:715px;
+       height:100px;
+       }
+   .add{
+       position: absolute;
+       top: 550px;
+   }
+   button{
+       width: 90px;
+       background-color: #EEECEC;
+
+   }
+   </style>
+    <script src="jQuery.js"></script>
+</head>
+<body onload="tmpPerson()">
+
+<!-- Шапка сайта -->
+
+<header id="headerInner">
+
+    <!-- Навигация -->
+
+    <nav class="bottomMenu">
+
+    </nav>
+    <!-- Конец навигации -->
+
+</header><!-- Конец шапки сайта -->
+
+<section id="wrapper"><!-- основной блок -->
+        <aside id="tableBox"> <!-- блок боковой колонки -->
+            <table>
+                <thead>
+                <tr>
+                    <th >id</th><th>fname</th><th>lname</th><th>age</th>
+                </tr>
+                </thead>
+                <tbody id="tPerson">
+                <tr id="rowTmp">
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                </tr>
+                </tbody>
+            </table>
+        </aside>
+    <aside id="tableEdite"><!-- блок там где отображаются посты -->
+        <!-- Начало поста -->
+        <article class="add">
+            <br />
+            <input type="text" id="txtId" />
+            <input type="text" id="txtFname"  />
+            <input type="text" id="txtLname" />
+            <input type="text" id="txtAge" /><br />
+        </article>
+        <!-- Начало поста -->
+    </aside>
+</section>
+
+<footer id="footerInner"><!-- Футер сайта -->
+    <br />
+    <button onclick="addFirst()">addFirst </button>
+    <button onclick="delFirst()" >delFirst </button><br>
+    <button onclick="addMidle()" >addMidle </button>
+    <button onclick="delMidle()" >delMidle </button><br>
+    <button onclick="addLast()" >addlLast </button>
+    <button onclick="delLast()" >delLast </button><br>
+    <button onclick="tableToXML()">SaveToXML </button>
+    <button onclick="toLocalStorageJSON()" >SaveToJSON </button><br>
+    <button onclick="" >loadXML </button>
+    <button onclick="fromJSON()" >LoadJSON </button><br>
+</footer>
+
+</body>
+</html>
