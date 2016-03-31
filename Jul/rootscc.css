@@ -41,12 +41,13 @@ main {
     width: 1170px;
     display: block;
 }
-section {
+
+.recept {
     background-color:#eee;
-    border: 1px solid #ccc;
-    padding: 20px;
+    border: 2px double black;
+    margin-top: 20px;
     height:100%;
-    width: 100%;
+    width: 85%;
 }
 aside{
     float: right;
@@ -71,7 +72,7 @@ footer small a {
     background-color: #373737;
 }
 footer, nav, header, section, aside {
-    display: block
+    display: block;
 }
 ul{
 
@@ -89,4 +90,11 @@ ul{
     padding: 0 15px;
     width: 74%;
     overflow: hidden;
+}
+.eatimg {
+    float:right; /* Выравнивание по равому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+    padding-right: 170px;
+    width: 320px;
+    height: 220px;
 }
