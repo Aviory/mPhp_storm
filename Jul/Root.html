@@ -2,7 +2,9 @@
 <html lang="ru">
 <head>
     <title>root</title>
+    <meta charset="utf-8">
     <link href="rootscc.css" rel="stylesheet">
+    <script src="btnAdd.js"></script>
 </head>
 <body>
 
@@ -18,7 +20,7 @@
     <!-- Конец навигации -->
 
 </header><!-- Конец шапки сайта -->
-<main>
+<main id="main">
     <article><!-- основной блок -->
         <h1>Omlet</h1>
         <article class="ingridients">
@@ -56,12 +58,9 @@
         </article>
     </article>
 </main>
-<section>
-    <h2>Ingridients</h2>
-    <input id="addIngridient" type="text" value="" />
-    <h2>Cooking</h2>
-    <input id="addCooking" type="text" value="" />
-</section>
+<div id="edits">
+    <button onclick="addRecept()">new recept</button>
+</div>
 <footer><!-- Футер сайта -->
     <p>
         <small>

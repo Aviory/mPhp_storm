@@ -99,3 +99,25 @@ ul{
     height: 150px;
     width: 150px;
 }
+#edits{
+    float:inherit;
+    width: 65%;
+    margin-bottom: 10px;
+}
+#edits button{
+    float:inherit;
+    width: 120px;
+    height: 44px;
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+#edits textarea{
+    float:inherit;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+#edits h2{
+    float:inherit;
+    margin-left: 55px;
+    margin-bottom: 10px;
+}
