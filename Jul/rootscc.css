@@ -105,12 +105,12 @@ ul{
     margin-bottom: 10px;
 }
 #edits button{
-    float:inherit;
-    width: 120px;
-    height: 44px;
-    margin-left: 90px;
-    margin-bottom: 10px;
-}
+     float:inherit;
+     width: 120px;
+     height: 44px;
+     margin-left: 90px;
+     margin-bottom: 10px;
+ }
 #edits textarea{
     float:inherit;
     margin-left: 40px;

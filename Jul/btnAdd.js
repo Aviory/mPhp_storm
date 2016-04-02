@@ -10,8 +10,7 @@ function addRecept(){
     edit.appendChild(h2_Ingridients);
 
     var newTxtIng    = document.createElement('textarea');
-    newTxtIng.type   = "text";
-    newTxtIng.id     = "newIngridient";
+    newTxtIng.setAttribute("id","newIngridient");
     newTxtIng.rows   = 11;
     newTxtIng.cols   = 35;
     newTxtIng.maxLength = 500;
@@ -22,15 +21,14 @@ function addRecept(){
     edit.appendChild(h2_Cooking);
 
     var newTxtCook   = document.createElement('textarea');
-    newTxtCook.type  = "text";
-    newTxtCook.id    = "newIngridient";
+    newTxtCook.setAttribute("id","newCooking");
     newTxtCook.rows  = 15;
     newTxtCook.cols  = 100;
     newTxtIng.maxLength = 3000;
     edit.appendChild(newTxtCook);
 
     var newBtnAdd     = document.createElement("button");
-    newBtnAdd.onclick = "btnAdd()";
+    newBtnAdd.setAttribute("onclick", "btnAdd()");
     newBtnAdd.innerText = "Ok";
     edit.appendChild(newBtnAdd);
 }
@@ -39,9 +37,10 @@ function btnAdd(){
 
     var section = document.createElement("article");
     main.appendChild(section);
-    var h1_name = document.createElement("h1");
-    h1_name.innerText = "Header";
-    section.appendChild("h1_name");
+
+    var headerName = document.createElement("h1");
+    headerName.innerText = "Header name rec";
+    section.appendChild(headerName);
 
     var ingridient   = document.createElement("article");
     ingridient.class = "ingridients";
@@ -61,12 +60,21 @@ function btnAdd(){
     p.innerText = "text";
     cooking.appendChild(p);
 
+    var edit = document.getElementById("edits");
+    edit.innerHTML="";
+
+    var newBtnAdd     = document.createElement("button");
+    newBtnAdd.setAttribute("onclick", "addRecept()");
+    newBtnAdd.innerText = "new recept";
+    edit.appendChild(newBtnAdd);
 }
 function add_ul(){
-    var ul = document.createElement("ul");
-    for(var i=0;i<2;i++){
+    var ul     = document.createElement("ul");
+    var strIng = $('#newIngridient').val().split(/[\n\r]+/);
+
+    for(var i=0;i<strIng.length;i++){
         var li = document.createElement("li");
-        li.innerText = "ul";
+        li.innerText = strIng[i];
         ul.appendChild(li);
     }
     return ul;
