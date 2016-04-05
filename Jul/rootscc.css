@@ -71,14 +71,11 @@ footer small a {
 footer, nav, header, section, aside {
     display: block;
 }
-ul{
-
-}
 .ingridients{
     float: right;
     margin-bottom: 30px;
     padding: 15px;
-    width: 74%;
+    width: 30%;
     overflow: hidden;
 }
 .cooking{
@@ -121,3 +118,4 @@ ul{
     margin-left: 55px;
     margin-bottom: 10px;
 }
+/* сделать беграунд цветом-картинкой время дня */

@@ -7,13 +7,11 @@ var newRecept
         var edit = document.getElementById("edits");
         edit.innerHTML = "";
 
-        var h2_Ingridients = document.createElement("h2");
-        <!-- создание заголовок ингридиенты -->
+        var h2_Ingridients = document.createElement("h2"); <!-- создание заголовок ингридиенты -->
         h2_Ingridients.innerText = "Ingridients";
         edit.appendChild(h2_Ingridients);
 
-        var newTxtIng = document.createElement('textarea');
-        <!-- создание нгридиенты блок -->
+        var newTxtIng = document.createElement('textarea'); <!-- создание нгридиенты блок -->
         newTxtIng.setAttribute("id", "newIngridient");
         newTxtIng.rows = 11;
         newTxtIng.cols = 35;
@@ -70,8 +68,7 @@ var newRecept
         cooking.appendChild(h2_Cooking);
         cooking.appendChild(addCooking());
 
-        var edit = document.getElementById("edits");
-        <!-- очистить поле добавления и добавить кнопку -->
+        var edit = document.getElementById("edits"); <!-- очистить поле добавления и добавить кнопку -->
         edit.innerHTML = "";
 
         var newBtnAdd = document.createElement("button");
