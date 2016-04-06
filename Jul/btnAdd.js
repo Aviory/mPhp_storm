@@ -11,6 +11,8 @@ var newRecept
         h2_Ingridients.innerText = "Ingridients";
         edit.appendChild(h2_Ingridients);
 
+        edit.appendChild(fileLoad());<!--add картинка -->
+
         var newTxtIng = document.createElement('textarea'); <!-- создание нгридиенты блок -->
         newTxtIng.setAttribute("id", "newIngridient");
         newTxtIng.rows = 11;
@@ -49,6 +51,7 @@ var newRecept
         <!-- заголовок рецепта -->
         headerName.innerText = "Header name rec";
         section.appendChild(headerName);
+        section.appendChild(saveFile());
 
         var ingridient = document.createElement("article");
         <!-- внутринний артикль ингридиентов -->
@@ -87,7 +90,7 @@ var newRecept
                 li.innerText = strIng[i];
                 ul.appendChild(li);
             }
-            if (i == 0) {
+            if (i == 0) {<!-- add заголовок рецепта -->
                 document.getElementById('main').lastElementChild.firstElementChild.innerText = strIng[i];
             }
         }
@@ -102,5 +105,21 @@ var newRecept
             p.innerHTML += "<br/>";
         }
         return p;
+    }
+    function fileLoad(){
+        var img = document.createElement('input');
+        img.setAttribute('type', 'file');
+        img.setAttribute('accept', 'image/*');
+        img.setAttribute('id', randomID());
+        return img;
+    }
+    function saveFile(){
+        var image_ID = $('main').last().slice(1,2);
+        var img = document.createElement('img');
+        img.setAttribute('class','eatimg');
+        img.setAttribute('src', 'id');
+    }
+    function randomID(){
+        return Math.floor((Math.random()*1000000)+1);
     }
 }

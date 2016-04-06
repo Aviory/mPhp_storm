@@ -113,6 +113,10 @@ footer, nav, header, section, aside {
     margin-left: 40px;
     margin-bottom: 10px;
 }
+#edits input{
+    float: right;
+    margin-right: 15px;
+}
 #edits h2{
     float:inherit;
     margin-left: 55px;
