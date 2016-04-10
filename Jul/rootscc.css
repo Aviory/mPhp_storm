@@ -1,33 +1,115 @@
 :root{
     background-color: rgb(56,41,48);
 }
+/* Тело */
 body {
-    background-color: rgba(255, 255, 255, .9);
     margin: 0 auto;
-    min-height: 350px;
-    width: 1000px;
 }
+main {
+    background-color: rgba(255, 255, 255, .9);
+    min-height: 350px;
+    margin: 0 auto;
+    width: 65%;
+    display: block;
+    margin-left: 50px;
+    float: left;
+}
+/* конец редакции тела */
+/* шапка */
 header {
     background-color: #373737;
     color: #fff;
     height: 160px;
-    padding: 10px 50px;
+    padding-left: 275px;
+    width: inherit;
+    background-image: url(res/headerbroad.jpg);
+    background-repeat:repeat-x;
 }
+/* стили поиска */
+#searchform{
+    width: auto;
+    position: relative;
+    width: 27%;
+}
+#searchable{
+    width: 385px;
+    border: none;
+    padding: 8px 80px 9px 15px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+    background: #EEE;
+    font: 14px Tahoma, Arial, sans-serif;
+    color: rgba(93, 93, 93, 0.92);
+}
+#searchable:focus{
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+    background: #E8E8E8;
+    color: #333;
+    border: none;
+    outline: none;
+}
+#btnsearch{
+    position: absolute;
+    top: 3px;
+    left: 305px;
+    width: 80px;
+    height: 30px ;
+    border-radius: 15px;
+    opacity: 0.5;
+    margin-right: 100px;
+}
+#btnsearch:hover{
+    opacity: 0.8;
+}
+
+/* конец стилей поиска */
+/* конец стилей шапки */
 figure {
     float:left;
 }
-nav {
+/* навигация */
+#headerNav{
     background-color: #eee;
     border: 1px solid #ddd;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     height: 56px;
+    width: 76%;
 }
+#leftNav {
+    float: left;
+    background-color: #eee;
+    border: 1px solid #373737;
+    margin-top: 50px;
+    margin-left: 25px;
+    height: 270px;
+    width: 200px;
+    background-image: url(res/schoolboard.png);
+    display: block;
+}
+#leftNav menu li{
+    float:none;
+    margin-left:27px;
+    font-size: 1px;
+}
+#leftNav menu li a{
+    display: block;
+    font-size: 24px;
+    color: azure;
+    text-decoration: none;
+    font-family: Batang;
+    background-repeat: inherit;
+    width: 130px;
+    margin-top: 5px;
+}
+#leftNav menu li a:hover {
+    color: #9ae9ff;
+    background: repeat-y;
+}
+/* конец навигации */
 menu {
     padding: 0;
-}
-nav ul li {
-    float:left;
-    margin-right:22px
 }
 article {
     float: left;
@@ -36,11 +118,7 @@ article {
     width: 74%;
     overflow: hidden;
 }
-main {
-    margin: 0 auto;
-    width: 1170px;
-    display: block;
-}
+
 .recept {
     background-color:#eee;
     border: 2px double black;
@@ -56,6 +134,7 @@ aside{
     overflow: hidden;
     position:relative;
 }
+/* футер */
 footer {
     background-color: #373737;
     clear: both;
@@ -65,12 +144,14 @@ footer {
 footer small a {
     color: #eff;
 }
+/* конец футера */
 .add{
     background-color: #373737;
 }
 footer, nav, header, section, aside {
     display: block;
 }
+/* секции рецепта */
 .ingridients{
     float: right;
     margin-bottom: 30px;
@@ -88,14 +169,16 @@ footer, nav, header, section, aside {
 .eatimg {
     float:right; /* Выравнивание по равому краю */
     margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
-    padding-right: 0px;
+    padding-right: 1px;
     width: 320px;
     height: 220px;
 }
+/* конец секции рецепта */
 .addIngridient{
     height: 150px;
     width: 150px;
 }
+/* секция редактирования */
 #edits{
     float:inherit;
     width: 65%;
@@ -122,4 +205,5 @@ footer, nav, header, section, aside {
     margin-left: 55px;
     margin-bottom: 10px;
 }
+/* конец секции редактирования */
 /* сделать беграунд цветом-картинкой время дня */

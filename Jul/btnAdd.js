@@ -51,7 +51,7 @@ var newRecept
         <!-- заголовок рецепта -->
         headerName.innerText = "Header name rec";
         section.appendChild(headerName);
-        section.appendChild(saveFile());
+        <!-- section.appendChild(saveFile()) -->
 
         var ingridient = document.createElement("article");
         <!-- внутринний артикль ингридиентов -->
