@@ -1,6 +1,13 @@
 /**
  * Created by user on 01.04.2016.
  */
+ var qpost{
+	 var query;
+	 var con = new XMLHttprequest();
+	 con.open('GET', 'dao.php?'+query, false);
+	 con.send();
+ }
+
 var newRecept
 {
     function addRecept() {<!-- форма для добавления нового рецепта -->
