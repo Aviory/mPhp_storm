@@ -1,14 +1,14 @@
 <?php
-$hostname_connect = "localhost";
-$database_connect = "datarec";
-$username_connect = "root";
-$password_connect = "";
+$host = "localhost";
+$db   = "datarec";
+$charset = "utf-8";
+$user = "root";
+$pass ="";
 
-$link = mysqli_connect($hostname_connect, $username_connect, $password_connect) or die('Не удалось соединиться: ' . mysqli_error());
-echo 'Соединение успешно установлено';
-mysqli_select_db($database_connect) or die('Не удалось выбрать базу данных');
-
-@mysqli_query("set character_set_client='utf8'");
-@mysqli_query("set character_set_results='utf8'");
-@mysqli_query("set collation_connection='utf8_unicode_ci'");
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$opt = array(
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+);
+$pdo = new PDO($dsn, $user, $pass, $opt);
 ?>
