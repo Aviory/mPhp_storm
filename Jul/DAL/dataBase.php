@@ -1,22 +1,22 @@
 <?php
 require_once 'config.php';
-require_once 'objrecipe.php';
 //http://phpfaq.ru/pdo
 $stmt = $pdo->query('SELECT * FROM recipes');
-$recList = array();
+$reclist = array();
 while ($row = $stmt->fetch())
 {
-    $rec              = new recipe;
-    $rec->id          = $row['id'];
-    $rec->name        = $row['name'];
-    $rec->category    = $row['category'];
-    $rec->podcategory = $row['podcategory'];
-    $rec->ingridients = $row['ingridients'];
-    $rec->cooking     = $row['cooking'];
-    $rec->image       = $row['image'];
-    $recList[] = $rec;
+    $rec              = array(
+    "id"          => $row['id'],
+    "name"        => $row['name'],
+    "category"    => $row['category'],
+    "podcategory" => $row['podcategory'],
+    "ingridients" => $row['ingridients'],
+    "cooking"     => $row['cooking'],
+    "image"       => $row['image']
+);
+    $reclist[] = $rec;
 }
-echo json_encode($recList);
+echo json_encode($reclist);
 //echo $row['name'] . "<br>" ;
 $stmt = null;
 $pdo = null;

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="879c23a8-9dcc-4fcc-b161-5d2a458d0638" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jul/res/addNewResipe.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Jul/res/addNewResipe.js" afterPath="$PROJECT_DIR$/Jul/addNewResipe.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/DAL/config.php" afterPath="$PROJECT_DIR$/Jul/DAL/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/DAL/dataBase.php" afterPath="$PROJECT_DIR$/Jul/DAL/dataBase.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/DAL/objrecipe.php" afterPath="$PROJECT_DIR$/Jul/DAL/objrecipe.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/index.html" afterPath="$PROJECT_DIR$/Jul/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/querys.js" afterPath="$PROJECT_DIR$/Jul/querys.js" />
     </list>
     <ignored path="PHP_Pro.iws" />
@@ -39,10 +39,10 @@
       <file leaf-file-name="dataBase.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jul/DAL/dataBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
               <folding>
-                <marker date="1460992662949" expanded="true" signature="107:128" placeholder="SELECT * FRO... recipes" />
+                <marker date="1461070930207" expanded="true" signature="77:98" placeholder="SELECT * FRO... recipes" />
               </folding>
             </state>
           </provider>
@@ -52,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/Jul/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -61,8 +61,8 @@
       <file leaf-file-name="querys.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jul/querys.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="136">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding>
                 <element signature="n#!!doc;n#qpost#0" expanded="false" />
               </folding>
@@ -71,10 +71,10 @@
         </entry>
       </file>
       <file leaf-file-name="addNewResipe.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Jul/res/addNewResipe.js">
+        <entry file="file://$PROJECT_DIR$/Jul/addNewResipe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+            <state relative-caret-position="85">
+              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
               <folding>
                 <element signature="n#!!doc;n#rowRecipeAndFillData#0" expanded="false" />
               </folding>
@@ -85,8 +85,8 @@
       <file leaf-file-name="btnAdd.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jul/btnAdd.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="107" column="5" selection-start-line="82" selection-start-column="3" selection-end-line="107" selection-end-column="5" />
+            <state relative-caret-position="1054">
+              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -131,14 +131,15 @@
         <option value="$PROJECT_DIR$/Jul/rootscc.css" />
         <option value="$PROJECT_DIR$/Jul/DAL/dao.php" />
         <option value="$PROJECT_DIR$/Jul/btnAdd.js" />
-        <option value="$PROJECT_DIR$/Jul/index.html" />
         <option value="$PROJECT_DIR$/Jul/DAL/my_setting.ini" />
         <option value="$PROJECT_DIR$/Jul/DAL/config.php" />
-        <option value="$PROJECT_DIR$/Jul/DAL/objrecipe.php" />
         <option value="$PROJECT_DIR$/Jul/addNewRicipe.js" />
-        <option value="$PROJECT_DIR$/Jul/DAL/dataBase.php" />
-        <option value="$PROJECT_DIR$/Jul/querys.js" />
+        <option value="$PROJECT_DIR$/Jul/DAL/objrecipe.php" />
         <option value="$PROJECT_DIR$/Jul/res/addNewResipe.js" />
+        <option value="$PROJECT_DIR$/Jul/DAL/dataBase.php" />
+        <option value="$PROJECT_DIR$/Jul/addNewResipe.js" />
+        <option value="$PROJECT_DIR$/Jul/index.html" />
+        <option value="$PROJECT_DIR$/Jul/querys.js" />
       </list>
     </option>
   </component>
@@ -152,8 +153,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="572" />
-    <option name="y" value="91" />
+    <option name="x" value="779" />
+    <option name="y" value="61" />
     <option name="width" value="1400" />
     <option name="height" value="874" />
   </component>
@@ -230,24 +231,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP_Pro" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="git" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jul" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="DAL" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -264,13 +247,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\vel\PHP_Pro\socket" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\git\Jul" />
       <recent name="C:\vel\PHP_Pro\Jul\res" />
       <recent name="C:\vel\PHP_Pro\Jul" />
       <recent name="C:\vel\PHP_Pro\dom" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\vel\PHP_Pro\socket" />
     </key>
   </component>
   <component name="RunManager">
@@ -324,12 +308,13 @@
       <workItem from="1460736165305" duration="3859000" />
       <workItem from="1460742034072" duration="1543000" />
       <workItem from="1460888768827" duration="3091000" />
-      <workItem from="1460966446780" duration="14067000" />
+      <workItem from="1460966446780" duration="14205000" />
+      <workItem from="1461066467190" duration="5390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48088000" />
+    <option name="totallyTimeSpent" value="53616000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,10 +326,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="572" y="91" width="1400" height="874" extended-state="0" />
+    <frame x="779" y="61" width="1400" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17761195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17985074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.49701494" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.50298506" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -589,13 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/PArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Jul/menu/cakes.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -671,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -683,26 +660,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/btnAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="107" column="5" selection-start-line="82" selection-start-column="3" selection-end-line="107" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/addNewRicipe.js" />
     <entry file="file://$PROJECT_DIR$/Jul/DAL/objrecipe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/addNewRicipe.js">
+    <entry file="file://$PROJECT_DIR$/Jul/btnAdd.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1054">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/DAL/dataBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <marker date="1461070930207" expanded="true" signature="77:98" placeholder="SELECT * FRO... recipes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/PArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -710,25 +698,15 @@
     <entry file="file://$PROJECT_DIR$/Jul/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/DAL/dataBase.php">
+    <entry file="file://$PROJECT_DIR$/Jul/addNewResipe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <marker date="1460992662949" expanded="true" signature="107:128" placeholder="SELECT * FRO... recipes" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/res/addNewResipe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+        <state relative-caret-position="85">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
           <folding>
             <element signature="n#!!doc;n#rowRecipeAndFillData#0" expanded="false" />
           </folding>
@@ -737,8 +715,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jul/querys.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="136">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="n#!!doc;n#qpost#0" expanded="false" />
           </folding>
