@@ -13,9 +13,9 @@ function qpost(){
         if (xhr.readyState == 4) { // Ответ пришёл
             if(xhr.status == 200) { // Сервер вернул код 200 (что хорошо)
                 data = xhr.responseText; // Выводим ответ сервера
-                document.getElementById("edits").innerText = xhr.responseText;
-                var mjson = JSON.stringify(data);
-                var reclist = JSON.parse(mjson);
+                //document.getElementById("edits").innerText = xhr.responseText;
+                localStorage.setItem("tPerson3", data);
+                var reclist = JSON.parse(data);
                 for(var i = 0; i < reclist.length; i++)
                 {
                     var row = rowRecipeAndFillData(reclist[i]);
