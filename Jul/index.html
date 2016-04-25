@@ -8,6 +8,7 @@
     <script src="btnAdd.js"></script>
     <script src="querys.js"></script>
     <script src="addNewResipe.js"></script>
+    <script src="btnMenu.js"></script>
 	</head>
 <body>
 
@@ -28,12 +29,89 @@
 </header><!-- Конец шапки сайта -->
 <nav id="leftNav">
     <menu type="context">
-        <li ><a href="menu/cakes.html">Cakes</a></li>
-        <li><a href="menu/cakes.html">Pancakes</a></li>
-        <li><a href="menu/cakes.html">Meat</a></li>
-        <li><a href="menu/cakes.html">Bakery products</a></li>
-        <li><a href="menu/cakes.html">Tea</a></li>
-        <li><a href="menu/cakes.html">Chocolate</a></li>
+        <li class="list_menu"><a href="#" onclick="">Первые блюда</a>
+            <ul class="drop_menu">
+                <li><a href="#" onclick="">Супы</a></li>
+                <li><a href="#" onclick="">Крем-суп</a></li>
+                <li><a href="#" onclick="">Другие</a></li>
+            </ul>
+        </li>
+        <li class="list_menu"><a href="#" onclick="">Выпечка</a>
+            <ul class="drop_menu">
+                <li><a href="#" onclick="">хлеб</a></li>
+                <li><a href="#" onclick="">сладкие булочки</a></li>
+                <li><a href="#" onclick="">печенье</a></li>
+                <li><a href="#" onclick="">пироги</a></li>
+                <li><a href="#" onclick="">пирожки/лепешки</a></li>
+            </ul>
+        </li>
+        <li class="list_menu"><a href="#" onclick="">Десерты</a>
+            <ul class="drop_menu">
+                <li><a href="#" onclick="">десерты</a></li>
+                <li><a href="#" onclick="">кексы/маффины</a></li>
+                <li><a href="#" onclick="">блины</a></li>
+                <li><a href="#" onclick="">оладьи</a></li>
+                <li><a href="#" onclick="">вафли</a></li>
+                <li><a href="#" onclick="">пончики</a></li>
+                <li><a href="#" onclick="">пирожные</a></li>
+                <li><a href="#" onclick="">сладости</a></li>
+            </ul>
+        </li>
+        <li class="list_menu"><a href="#" onclick="">Торты</a>
+            <ul class="drop_menu">
+                <li><a href="#" onclick="">тарты</a></li>
+                <li><a href="#" onclick="">кремовые</a></li>
+                <li><a href="#" onclick="">шоколадные</a></li>
+                <li><a href="#" onclick="">чизкейки</a></li>
+            </ul>
+        </li>
+        <li class="list_menu"><a href="#" onclick="">Диетическое</a>
+            <ul class="drop_menu">
+                <li><a href="#" onclick="">десерты</a></li>
+                <li><a href="#" onclick="">батончики</a></li>
+                <li><a href="#" onclick="">завтраки</a></li>
+                <li><a href="#" onclick="">гарниры</a></li>
+            </ul>
+        </li>
+        <li class="list_menu"><a href="#" onclick="">Гарниры</a>
+        <ul class="drop_menu">
+            <li><a href="#" onclick="">Макароны</a></li>
+            <li><a href="#" onclick="">рис/плов</a></li>
+            <li><a href="#" onclick="">Картофель</a></li>
+            <li><a href="#" onclick="">пицца/тарт</a></li>
+            <li><a href="#" onclick="">Овощи</a></li>
+            <li><a href="#" onclick="">фрукты</a></li>
+        </ul>
+    </li>
+        <li class="list_menu"><a href="#" onclick="">Алкоголь</a>
+            <ul class="drop_menu">
+            </ul>
+        </li>
+        <li class="list_menu"><a href="#" onclick="">Консервация</a>
+            <ul class="drop_menu">
+                <li><a href="#" onclick="">Варенья/джемы</a></li>
+                <li><a href="#" onclick="">Овощи</a></li>
+            </ul>
+        </li>
+        <li class="list_menu"><a href="#" onclick="">Закуски</a>
+            <ul class="drop_menu">
+                <li><a href="#" onclick="">Сыры</a></li>
+                <li><a href="#" onclick="">сырные</a></li>
+                <li><a href="#" onclick="">овощные</a></li>
+                <li><a href="#" onclick="">салаты</a></li>
+                <li><a href="#" onclick="">сэндвичи/бургеры</a></li>
+            </ul>
+        </li>
+        <li class="list_menu"><a href="#" onclick="">Соусы</a>
+            <ul class="drop_menu">
+            </ul>
+        </li>
+        <li class="list_menu"><a href="#" onclick="">каши</a>
+            <ul class="drop_menu">
+            </ul>
+        </li>
+        <li class="list_menu"><a href="#" onclick="">Мясные блюда</a></li>
+        <li class="list_menu"><a href="#" onclick="">Рыбные блюда</a></li>
     </menu>
 </nav>
 <main id="main">

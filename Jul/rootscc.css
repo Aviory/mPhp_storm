@@ -83,34 +83,67 @@ figure {
     border: 1px solid #373737;
     margin-top: 50px;
     margin-left: 25px;
-    height: 270px;
+    height: 485px;
     width: 200px;
     background-image: url(res/schoolboard.png);
     display: block;
 }
+menu {
+    padding: 0;
+    position: relative;
+}
+/* всплывающая навигация + */
+.list_menu{
+    position: relative;
+}
+.drop_menu {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    opacity: 0;
+    top: -9999em;
+    transition: 0.5s opacity;
+    background-image: url(res/schoolboard.png);
+}
+.list_menu:hover .drop_menu{
+    opacity: 1;
+    top: -8px;
+}
+.list_menu::after{
+    content: " ";
+    position: absolute;
+    border: 5px solid;
+    border-color:  transparent transparent transparent #AFF6F8;
+    top: 6em;
+    right: 0.7em;
+    transition: 0.5s;
+    opacity: 0;
+}
+.list_menu:hover::after {
+    opacity: 1;
+}
+/* всплывающая навигация - */
 #leftNav menu li{
     float:none;
     margin-left:27px;
     font-size: 1px;
 }
-#leftNav menu li a{
+#leftNav menu a{
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     color: azure;
     text-decoration: none;
     font-family: Batang;
     background-repeat: inherit;
-    width: 130px;
+    width: 144px;
     margin-top: 5px;
+    transition: 0.3s all;
 }
-#leftNav menu li a:hover {
+#leftNav menu a:hover {
     color: #9ae9ff;
     background: repeat-y;
 }
 /* конец навигации */
-menu {
-    padding: 0;
-}
 article {
     float: left;
     margin-bottom: 30px;
