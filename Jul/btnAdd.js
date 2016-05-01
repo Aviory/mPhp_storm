@@ -35,50 +35,36 @@ var newRecept
 
         var newBtnAdd = document.createElement("button");
         <!-- кнопка добавления -->
-        newBtnAdd.setAttribute("onclick", "btnAdd()");
+        newBtnAdd.setAttribute("onclick", "SendData()");
         newBtnAdd.innerText = "Ok";
         edit.appendChild(newBtnAdd);
     }
 
-    function btnAdd() {<!-- кнопка добавить новый рецепт -->
-        var main = document.getElementById("main");
+    function SendData() {<!-- кнопка добавить новый рецепт -->
+        var edit = document.getElementById("edits");
+        var query = "";
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", '/git/Jul/DAL/dataBase.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send();
+        var data = "cl";
+        xhr.onreadystatechange = function() { // Ждём ответа от сервера
+            if (xhr.readyState == 4) { // Ответ пришёл
+                if(xhr.status == 200) { // Сервер вернул код 200 (что хорошо)
+                    edit.innerHTML = "";
+                    edit.innerHTML = xhr.responseText;
 
-        var section = document.createElement("article");
-        <!-- внешний артикль всего блока -->
-        main.appendChild(section);
-
-        var headerName = document.createElement("h1");
-        <!-- заголовок рецепта -->
-        headerName.innerText = "Header name rec";
-        section.appendChild(headerName);
+                    var newBtnAdd = document.createElement("button");<!-- добавить кнопку -->
+                    newBtnAdd.setAttribute("onclick", "addRecept()");
+                    newBtnAdd.innerText = "new recept";
+                    edit.appendChild(newBtnAdd);gid
+                }
+            }
+        };
         <!-- section.appendChild(saveFile()) -->
 
-        var ingridient = document.createElement("article");
-        <!-- внутринний артикль ингридиентов -->
-        ingridient.setAttribute("class", "ingridients");
-        section.appendChild(ingridient);
-        var h2_Ingridients = document.createElement("h2");
-        h2_Ingridients.innerText = "Ingridients";
-        ingridient.appendChild(h2_Ingridients);
-        ingridient.appendChild(add_ul());
-
-        var cooking = document.createElement("article");
-        <!-- внутренний артикль приготовления -->
-        cooking.setAttribute("class", "cooking");
-        section.appendChild(cooking);
-        var h2_Cooking = document.createElement("h2");
-        h2_Cooking.innerText = "Cooking";
-        cooking.appendChild(h2_Cooking);
-        cooking.appendChild(addCooking());
-
-        var edit = document.getElementById("edits"); <!-- очистить поле добавления и добавить кнопку -->
-        edit.innerHTML = "";
-
-        var newBtnAdd = document.createElement("button");
-        newBtnAdd.setAttribute("onclick", "addRecept()");
-        newBtnAdd.innerText = "new recept";
-        edit.appendChild(newBtnAdd);
     }
+
 
     function add_ul() {<!-- пробег по ингридиентам -->
         var ul = document.createElement("ul");

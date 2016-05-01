@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc58c44f-31ca-4f10-8609-9cda739b23a8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jul/DAL/categoryForBase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jul/DAL/insert.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/DAL/dataBase.php" afterPath="$PROJECT_DIR$/Jul/DAL/dataBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/addNewResipe.js" afterPath="$PROJECT_DIR$/Jul/addNewResipe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/btnMenu.js" afterPath="$PROJECT_DIR$/Jul/btnMenu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/index.html" afterPath="$PROJECT_DIR$/Jul/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/DAL/categoryForBase.php" afterPath="$PROJECT_DIR$/Jul/DAL/categoryForBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/btnAdd.js" afterPath="$PROJECT_DIR$/Jul/btnAdd.js" />
     </list>
     <ignored path="git.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,27 +37,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categoryForBase.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Jul/DAL/categoryForBase.php">
+      <file leaf-file-name="btnAdd.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Jul/btnAdd.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-              <folding>
-                <marker date="1462121305995" expanded="true" signature="160:216" placeholder="SELECT * FRO... recipes" />
-                <marker date="1462121305995" expanded="true" signature="375:425" placeholder="SELECT * FRO... recipes" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="btnMenu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Jul/btnMenu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="25" />
-              <folding>
-                <element signature="n#!!doc;n#queryForCategory#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="426">
+              <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,8 +69,10 @@
         <option value="$PROJECT_DIR$/Jul/addNewResipe.js" />
         <option value="$PROJECT_DIR$/Jul/DAL/dataBase.php" />
         <option value="$PROJECT_DIR$/Jul/btnMenu.js" />
-        <option value="$PROJECT_DIR$/Jul/DAL/categoryForBase.php" />
         <option value="$PROJECT_DIR$/Jul/index.html" />
+        <option value="$PROJECT_DIR$/Jul/DAL/categoryForBase.php" />
+        <option value="$PROJECT_DIR$/Jul/DAL/insert.php" />
+        <option value="$PROJECT_DIR$/Jul/btnAdd.js" />
       </list>
     </option>
   </component>
@@ -165,24 +150,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP_Pro" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="git" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jul" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAL" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -245,12 +212,12 @@
       <workItem from="1461583046625" duration="16514000" />
       <workItem from="1461757036020" duration="953000" />
       <workItem from="1461918782210" duration="6821000" />
-      <workItem from="1462034488865" duration="18372000" />
+      <workItem from="1462034488865" duration="21971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42660000" />
+    <option name="totallyTimeSpent" value="46259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1040" extended-state="6" />
@@ -431,22 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/btnAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/querys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Jul/DAL/dataBase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -467,6 +418,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/DAL/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+          <folding>
+            <marker date="1462122728113" expanded="true" signature="160:216" placeholder="SELECT * FRO... recipes" />
+            <marker date="1462122728113" expanded="true" signature="375:425" placeholder="SELECT * FRO... recipes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/DAL/categoryForBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding>
+            <marker date="1462122699868" expanded="true" signature="137:193" placeholder="SELECT * FRO... recipes" />
+            <marker date="1462122699868" expanded="true" signature="352:402" placeholder="SELECT * FRO... recipes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Jul/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
@@ -475,14 +448,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/DAL/categoryForBase.php">
+    <entry file="file://$PROJECT_DIR$/Jul/querys.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding>
-            <marker date="1462121305995" expanded="true" signature="160:216" placeholder="SELECT * FRO... recipes" />
-            <marker date="1462121305995" expanded="true" signature="375:425" placeholder="SELECT * FRO... recipes" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/btnAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>

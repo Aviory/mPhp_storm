@@ -1,5 +1,6 @@
 <?php
 require_once 'config.php';
+//http://phpfaq.ru/pdo
 if(isset($_POST['podcategoryes'])){
     $podcateg = $_POST['podcategoryes'];
     $stmt = $pdo->prepare('SELECT * FROM recipes WHERE podcategory = :podcategoryes');
