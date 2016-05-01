@@ -13,7 +13,7 @@ while ($row = $stmt->fetch())
     "ingridients" => $row['ingridients'],
     "cooking"     => $row['cooking'],
     "image"       => $row['image']
-);
+    );
     $reclist[] = $rec;
 }
 echo json_encode($reclist);

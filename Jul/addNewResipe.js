@@ -8,12 +8,16 @@ function rowRecipeAndFillData(rec) {
     headerName.innerText = rec.name;
     section.appendChild(headerName);
     <!-- section.appendChild(saveFile()) -->
+    var image = document.createElement("img");<!-- картинка рецепта -->
+    image.setAttribute("class", "eatimg");
+    image.setAttribute("src", rec.image);
+    section.appendChild(image);
 
     var ingridient = document.createElement("article");<!-- внутринний артикль ингридиентов -->
     ingridient.setAttribute("class", "ingridients");
     section.appendChild(ingridient);
 
-    var h2_Ingridients = document.createElement("h2");
+    var h2_Ingridients = document.createElement("h2");<!-- заголовок ингридиентов -->
     h2_Ingridients.innerText = "Ingridients";
     ingridient.appendChild(h2_Ingridients);
     ingridient.appendChild(add_ul(rec));
