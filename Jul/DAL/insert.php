@@ -1,32 +1,36 @@
 <?php
 require_once 'config.php';
-//http://phpfaq.ru/pdo
-if(isset($_POST['podcategoryes'])){
-    $podcateg = $_POST['podcategoryes'];
-    $stmt = $pdo->prepare('SELECT * FROM recipes WHERE podcategory = :podcategoryes');
-    $stmt->execute(array(':podcategoryes' => $podcateg));
+require_once 'objrecipe.php';
+$rec = new recipe();
+if(isset($_POST['recname'])){
+    $rec->rec_name = $_POST['recname'];
 }
 if(isset($_POST['categoryes'])){
-    $categ = $_POST['categoryes'];
-    $stmt = $pdo->prepare('SELECT * FROM recipes WHERE category = :categoryes');
-    $stmt->execute(array(':categoryes' => $categ));
+    $rec->category = $_POST['categoryes'];
 }
-$reclist = array();
-while ($row = $stmt->fetch())
+if(isset($_POST['podcategoryes'])){
+    $rec->podcategory = $_POST['podcategoryes'];
+}
+if(isset($_POST['ingridients'])){
+    $rec->ingridients = $_POST['ingridients'];
+}
+if(isset($_POST['cookings'])){
+    $rec->cooking = $_POST['cookings'];
+}
+if(isset($_POST['images'])){
+    $rec->image = $_POST['images'];
+}
+if(is_uploaded_file($_FILES["filename"]["tmp_name"]))// поправить имя
 {
-    $rec              = array(
-        "id"          => $row['id'],
-        "name"        => $row['name'],
-        "category"    => $row['category'],
-        "podcategory" => $row['podcategory'],
-        "ingridients" => $row['ingridients'],
-        "cooking"     => $row['cooking'],
-        "image"       => $row['image']
-    );
-    $reclist[] = $rec;
+    // Если файл загружен успешно, перемещаем его
+    // из временной директории в конечную
+    move_uploaded_file($_FILES["filename"]["tmp_name"], "/res/".$_FILES["filename"]["name"]);
+    $image = "res/"+$_FILES["tmp_name"];
 }
-echo json_encode($reclist);
-//echo $row['name'] . "<br>" ;
+
+$stmt = $pdo->prepare("INSERT into recipes (rec_name, category, podcategory, ingridients, cooking, image) VALUES (:rec_name, :category, :podcategory, :ingridients, :cooking, :image)");
+$stmt->execute(array(':rec_name' => $rec->rec_name, ':category'=>$rec->category, ':podcategory' => $rec->podcategory, ':ingridients' =>$rec->ingridients, ':cooking'=>$rec->cooking, ':image' => $rec->image));
 $stmt = null;
 $pdo = null;
+header('Location: http://localhost/git/Jul/index.html'); exit;
 ?>

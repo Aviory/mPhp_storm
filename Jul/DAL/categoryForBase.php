@@ -15,7 +15,7 @@ while ($row = $stmt->fetch())
 {
     $rec              = array(
         "id"          => $row['id'],
-        "name"        => $row['name'],
+        "name"        => $row['rec_name'],
         "category"    => $row['category'],
         "podcategory" => $row['podcategory'],
         "ingridients" => $row['ingridients'],

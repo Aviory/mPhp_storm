@@ -1,14 +1,14 @@
 <?php
-//class recipe
-//{
-//	public $id;
-//	public $name;
-//	public $category;
-//	public $podcategory;
-//	public $ingridients;
-//	public $cooking;
-//	public $image;
-//}
+class recipe
+{
+	public $id;
+	public $rec_name="";
+	public $category="";
+	public $podcategory="";
+	public $ingridients="";
+	public $cooking="";
+	public $image="";
+}
 //?>
 <!--$rec              = new recipe;-->
 <!--$rec->id          = $row['id'];-->
