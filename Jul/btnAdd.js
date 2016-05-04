@@ -18,8 +18,8 @@ var newRecept
         txtname.setAttribute('name', 'recname');
         form.appendChild(txtname);
 
-        form.appendChild(addSelect());
-        form.appendChild(addSelect());
+        form.appendChild(categorySelect());
+        form.appendChild(podcategorySelect());
 
         var h2_Ingridients = document.createElement("h2"); <!-- создание заголовок ингридиенты -->
         h2_Ingridients.innerText = "Ingridients";
@@ -51,15 +51,36 @@ var newRecept
         btn.setAttribute('value', 'загрузить');
         form.appendChild(btn);
     }
-    function addSelect() {
-        var tmp = document
-        var select1 = document.createElement('select');
-        select1.setAttribute('size', '5');
-        select1.setAttribute('name', 'category');
+    function categorySelect() {
+        //var tmp = document
+        var select = document.createElement('select');
+        select.setAttribute('size', '5');
+        select.setAttribute('name', 'category');
+        var drop_menu = document.getElementById("leftNav").firstElementChild;
+        for (var i=0;i<drop_menu.childElementCount;i++){
+            var str_category = drop_menu.children[i].firstElementChild.innerText;
+            select.appendChild(addOption(str_category));
+        }
+        return select;
+    }
+    function addOption(opt_name) {
         var option = document.createElement('option');
-        option.setAttribute('value', 'Первые блюда');
-        option.innerText = 'Первые блюда';
-
+        option.setAttribute('value', opt_name);
+        option.innerText = opt_name;
+        return option;
+    }
+    function podcategorySelect() {
+        //var tmp = document
+        var select = document.createElement('select');
+        select.setAttribute('size', '5');
+        select.setAttribute('name', 'category');
+        var drop_menu = document.getElementById("leftNav").firstElementChild;
+        var str_category = drop_menu.children[i].lastElementChild.innerText;
+        var list_menu;
+            for (var i=0;i<drop_menu.childElementCount;i++){
+                select.appendChild(addOption(str_category));
+            }
+        return select;
     }
 
     // function SendData() {<!-- кнопка добавить новый рецепт -->
