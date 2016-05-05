@@ -13,13 +13,18 @@ var newRecept
         form.setAttribute('action', 'DAL/insert.php');
         edit.appendChild(form);
 
-        var txtname = document.createElement('input');
-        txtname.setAttribute('type', 'text');
-        txtname.setAttribute('name', 'recname');
-        form.appendChild(txtname);
+        var h2_Ingridients = document.createElement("h2"); <!-- создание заголовока имени -->
+        h2_Ingridients.innerText = "Name";
+        form.appendChild(h2_Ingridients);
 
-        form.appendChild(categorySelect());
-        form.appendChild(podcategorySelect());
+        var txtname = document.createElement('textarea');<!-- создание имени рецепта -->
+        txtname.setAttribute('name', 'recname');
+        txtname.rows = 2;
+        txtname.cols = 35;
+        form.appendChild(txtname);
+        form.innerHTML +="<br>";
+
+        form.appendChild(categorySelect()); <!-- создание категорий и подкатегорий -->
 
         var h2_Ingridients = document.createElement("h2"); <!-- создание заголовок ингридиенты -->
         h2_Ingridients.innerText = "Ingridients";
@@ -49,13 +54,15 @@ var newRecept
         var btn = document.createElement('input');
         btn.setAttribute('type', 'submit');
         btn.setAttribute('value', 'загрузить');
+        btn.setAttribute('class', 'btnAdd');
         form.appendChild(btn);
     }
+
     function categorySelect() {
-        //var tmp = document
         var select = document.createElement('select');
         select.setAttribute('size', '5');
-        select.setAttribute('name', 'category');
+        select.setAttribute('name', 'categoryes');
+        select.setAttribute('onchange', 'podcategorySelect(this.options[this.selectedIndex].value)');
         var drop_menu = document.getElementById("leftNav").firstElementChild;
         for (var i=0;i<drop_menu.childElementCount;i++){
             var str_category = drop_menu.children[i].firstElementChild.innerText;
@@ -63,24 +70,47 @@ var newRecept
         }
         return select;
     }
+
+    function podcategorySelect(category) {
+        if(!document.getElementById('podcategory')){
+            var select = document.createElement('select');
+            select.setAttribute('size', '5');
+            select.setAttribute('name', 'podcategoryes');
+            select.setAttribute('id', 'podcategory');
+        }
+        else {
+            var select = document.getElementById('podcategory');
+            select.innerHTML = "";
+        }
+
+        var drop_menu = document.getElementById("leftNav").firstElementChild;
+        for (var i=0;i<drop_menu.childElementCount;i++){
+            var str_category = drop_menu.children[i].firstElementChild.innerText;
+            if(category==str_category){
+                list_menu = drop_menu.children[i].lastElementChild;
+                for (var j=0;j<list_menu.childElementCount;j++){
+                    var str_podcategory = list_menu.children[j].firstElementChild.innerText;
+                    select.appendChild(addOption(str_podcategory));
+                }
+            }
+        }
+        var form = document.getElementById("edits").firstElementChild;
+        form.insertBefore(select, form.children[4] );
+    }
     function addOption(opt_name) {
         var option = document.createElement('option');
         option.setAttribute('value', opt_name);
         option.innerText = opt_name;
         return option;
     }
-    function podcategorySelect() {
-        //var tmp = document
-        var select = document.createElement('select');
-        select.setAttribute('size', '5');
-        select.setAttribute('name', 'category');
-        var drop_menu = document.getElementById("leftNav").firstElementChild;
-        var str_category = drop_menu.children[i].lastElementChild.innerText;
-        var list_menu;
-            for (var i=0;i<drop_menu.childElementCount;i++){
-                select.appendChild(addOption(str_category));
-            }
-        return select;
+    function fileLoad(){
+        var img = document.createElement('input');
+        img.setAttribute('class', 'add_img');
+        img.setAttribute('name', 'filename');
+        img.setAttribute('type', 'file');
+        img.setAttribute('accept', 'image/*');
+        img.setAttribute('multiple', '');
+        return img;
     }
 
     // function SendData() {<!-- кнопка добавить новый рецепт -->
@@ -132,14 +162,7 @@ var newRecept
     //     }
     //     return p;
     // }
-    function fileLoad(){
-        var img = document.createElement('input');
-        img.setAttribute('name', 'filename');
-        img.setAttribute('type', 'file');
-        img.setAttribute('accept', 'image/*');
-        img.setAttribute('multiple', '');
-        return img;
-    }
+    
     // function saveFile(){
     //     var image_ID = $('main').last().slice(1,2);
     //     var img = document.createElement('img');

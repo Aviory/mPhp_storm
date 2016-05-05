@@ -208,10 +208,6 @@ footer, nav, header, section, aside {
     height: 220px;
 }
 /* конец секции рецепта */
-.addIngridient{
-    height: 150px;
-    width: 150px;
-}
 /* секция редактирования */
 #edits{
     float:inherit;
@@ -220,7 +216,7 @@ footer, nav, header, section, aside {
     padding-left: 280px;
 
 }
-#edits button{
+#edits .btnAdd{
      float:inherit;
      width: 120px;
      height: 44px;
@@ -233,7 +229,12 @@ footer, nav, header, section, aside {
     margin-left: 40px;
     margin-bottom: 10px;
 }
-#edits input{
+#edits select{
+    float:inherit;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+#edits .add_img{
     float: right;
     margin-right: 15px;
 }
