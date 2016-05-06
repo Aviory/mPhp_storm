@@ -22,6 +22,14 @@ function queryForCategory(category) {
                     var row = rowRecipeAndFillData(reclist[i]);
                     document.getElementById("main").appendChild(row);
                 }
+                var edit = document.getElementById("edits"); <!-- очистить поле добавления и добавить кнопку -->
+                edit.innerHTML = "";
+
+                var newBtnAdd = document.createElement("button");
+                newBtnAdd.setAttribute("onclick", "addRecept()");
+                newBtnAdd.setAttribute("class", "btnAdd");
+                newBtnAdd.innerText = "Добавить рецепт";
+                edit.appendChild(newBtnAdd);
             }
         }
     };

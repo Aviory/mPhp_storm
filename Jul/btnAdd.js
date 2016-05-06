@@ -106,7 +106,7 @@ var newRecept
     function fileLoad(){
         var img = document.createElement('input');
         img.setAttribute('class', 'add_img');
-        img.setAttribute('name', 'filename');
+        img.setAttribute('name', 'images[]');
         img.setAttribute('type', 'file');
         img.setAttribute('accept', 'image/*');
         img.setAttribute('multiple', '');
@@ -114,7 +114,7 @@ var newRecept
     }
 
     // function SendData() {<!-- кнопка добавить новый рецепт -->
-    //     var data = "name="+"&categories="+"&podcategories="+"&ingridients="+"&cookings="+"&images=";
+    //     var data = "images=";
     //     var xhr = new XMLHttpRequest();
     //     xhr.open("POST", '/git/Jul/DAL/dataBase.php', true);
     //     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
@@ -125,17 +125,11 @@ var newRecept
     //                 var edit = document.getElementById("edits");
     //                 edit.innerHTML = xhr.responseText;
     //
-    //                 var newBtnAdd = document.createElement("button");<!-- добавить кнопку -->
-    //                 newBtnAdd.setAttribute("onclick", "addRecept()");
-    //                 newBtnAdd.innerText = "new recept";
-    //                 edit.appendChild(newBtnAdd);
     //             }
     //         }
     //     };
     //     <!-- section.appendChild(saveFile()) -->
     // }
-
-
     // function add_ul() {<!-- пробег по ингридиентам -->
     //     var ul = document.createElement("ul");
     //     var strIng = $('#newIngridient').val().split(/[\n\r]+/);

@@ -29,14 +29,7 @@ function rowRecipeAndFillData(rec) {
     h2_Cooking.innerText = "Cooking";
     cooking.appendChild(h2_Cooking);
     cooking.appendChild(addCooking(rec));
-
-    var edit = document.getElementById("edits"); <!-- очистить поле добавления и добавить кнопку -->
-    edit.innerHTML = "";
-
-    var newBtnAdd = document.createElement("button");
-    newBtnAdd.setAttribute("onclick", "addRecept()");
-    newBtnAdd.innerText = "new recept";
-    edit.appendChild(newBtnAdd);
+    
     return section;
 }
 function add_ul(rec) {<!-- пробег по ингридиентам -->

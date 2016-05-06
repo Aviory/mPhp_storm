@@ -17,15 +17,17 @@ if(isset($_POST['ingridients'])){
 if(isset($_POST['cookings'])){
     $rec->cooking = $_POST['cookings'];
 }
-if(isset($_POST['images'])){
-    $rec->image = $_POST['images'];
-}
-if(is_uploaded_file($_FILES["filename"]["tmp_name"]))// поправить имя
-{
-    // Если файл загружен успешно, перемещаем его
-    // из временной директории в конечную
-    move_uploaded_file($_FILES["filename"]["tmp_name"], "/res/".$_FILES["filename"]["name"]);
-    $image = "res/"+$_FILES["tmp_name"];
+$uploadsdir = "/xampp/htdocs/git/Jul/res/";
+foreach ($_FILES["images"]["error"] as $key => $error){
+    if ($error == UPLOAD_ERR_OK) {
+        $tmp_name = $_FILES["images"]["tmp_name"][$key];
+        $name = $_FILES["images"]["name"][$key];
+        copy($tmp_name, $uploadsdir . $name);
+        $rec->image .= "res/" . $name . "\n\r";
+    }
+    else{
+        echo "ерор:".$error;
+    }
 }
 
 $stmt = $pdo->prepare("INSERT into recipes (rec_name, category, podcategory, ingridients, cooking, image) VALUES (:rec_name, :category, :podcategory, :ingridients, :cooking, :image)");
@@ -33,4 +35,3 @@ $stmt->execute(array(':rec_name' => $rec->rec_name, ':category'=>$rec->category,
 $stmt = null;
 $pdo = null;
 header('Location: http://localhost/git/Jul/index.html'); exit;
-?>
