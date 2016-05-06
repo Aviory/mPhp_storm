@@ -21,12 +21,14 @@ $uploadsdir = "/xampp/htdocs/git/Jul/res/";
 foreach ($_FILES["images"]["error"] as $key => $error){
     if ($error == UPLOAD_ERR_OK) {
         $tmp_name = $_FILES["images"]["tmp_name"][$key];
+        $size = $_FILES["images"]["size"][$key];
         $name = $_FILES["images"]["name"][$key];
-        copy($tmp_name, $uploadsdir . $name);
-        $rec->image .= "res/" . $name . "\n\r";
+        copy($tmp_name, $uploadsdir . $size ."_julypop");
+        $rec->image .= "res/" .$size ."_julypop"."\n\r";
     }
     else{
         echo "ерор:".$error;
+        exit;
     }
 }
 
