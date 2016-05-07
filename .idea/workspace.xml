@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c17bd04f-b9a6-46df-b06f-b3efb2a9aaaa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jul/DAL/deleteRec.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jul/DAL/updateRec.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jul/btnOptions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/DAL/insert.php" afterPath="$PROJECT_DIR$/Jul/DAL/insert.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/addNewResipe.js" afterPath="$PROJECT_DIR$/Jul/addNewResipe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/index.html" afterPath="$PROJECT_DIR$/Jul/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/querys.js" afterPath="$PROJECT_DIR$/Jul/querys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/rootscc.css" afterPath="$PROJECT_DIR$/Jul/rootscc.css" />
     </list>
     <ignored path="git.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,22 +32,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="addNewResipe.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Jul/addNewResipe.js">
+      <file leaf-file-name="btnOptions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Jul/btnOptions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="11" column="103" selection-start-line="11" selection-start-column="103" selection-end-line="11" selection-end-column="103" />
+              <folding>
+                <element signature="n#!!doc;n#deleteRec#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="btnAdd.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Jul/btnAdd.js">
+      <file leaf-file-name="updateRec.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jul/DAL/updateRec.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1464">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="663">
+              <caret line="39" column="176" selection-start-line="39" selection-start-column="176" selection-end-line="39" selection-end-column="176" />
+              <folding>
+                <marker date="1462644643155" expanded="true" signature="1039:1208" placeholder="UPDATE recip... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,14 +59,45 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jul/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2210">
-              <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
+            <state relative-caret-position="-493">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="insert.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jul/DAL/insert.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+              <folding>
+                <marker date="1462645048062" expanded="true" signature="989:1147" placeholder="INSERT into recipes... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deleteRec.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jul/DAL/deleteRec.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding>
+                <marker date="1462644930471" expanded="true" signature="166:201" placeholder="DELETE from " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,10 +105,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Jul/rootscc.css" />
-        <option value="$PROJECT_DIR$/Jul/index.html" />
         <option value="$PROJECT_DIR$/Jul/btnAdd.js" />
+        <option value="$PROJECT_DIR$/Jul/rootscc.css" />
+        <option value="$PROJECT_DIR$/Jul/querys.js" />
         <option value="$PROJECT_DIR$/Jul/addNewResipe.js" />
+        <option value="$PROJECT_DIR$/Jul/DAL/updateRec.php" />
+        <option value="$PROJECT_DIR$/Jul/index.html" />
+        <option value="$PROJECT_DIR$/Jul/DAL/deleteRec.php" />
+        <option value="$PROJECT_DIR$/Jul/DAL/insert.php" />
+        <option value="$PROJECT_DIR$/Jul/btnOptions.js" />
       </list>
     </option>
   </component>
@@ -80,8 +127,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="26" />
-    <option name="y" value="43" />
+    <option name="x" value="83" />
+    <option name="y" value="57" />
     <option name="width" value="1260" />
     <option name="height" value="972" />
   </component>
@@ -142,6 +189,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="git" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jul" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DAL" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -198,15 +263,15 @@
       <option name="presentableId" value="Default" />
       <updated>1462601213693</updated>
       <workItem from="1462601223137" duration="6949000" />
-      <workItem from="1462634725943" duration="3030000" />
+      <workItem from="1462634725943" duration="8893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9979000" />
+    <option name="totallyTimeSpent" value="15842000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="43" width="1260" height="972" extended-state="0" />
+    <frame x="83" y="57" width="1260" height="972" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -268,48 +333,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/DAL/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/rootscc.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="190" column="1" selection-start-line="190" selection-start-column="1" selection-end-line="190" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Jul/btnMenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/btnAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1464">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Jul/addNewResipe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+        <state relative-caret-position="357">
+          <caret line="99" column="47" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/rootscc.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="211" column="18" selection-start-line="211" selection-start-column="18" selection-end-line="211" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/btnAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/DAL/updateRec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="176" selection-start-line="39" selection-start-column="176" selection-end-line="39" selection-end-column="176" />
+          <folding>
+            <marker date="1462644643155" expanded="true" signature="1039:1208" placeholder="UPDATE recip... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/DAL/deleteRec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <marker date="1462644930471" expanded="true" signature="166:201" placeholder="DELETE from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/querys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="6" selection-start-line="11" selection-start-column="3" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/DAL/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+          <folding>
+            <marker date="1462645048062" expanded="true" signature="989:1147" placeholder="INSERT into recipes... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/btnOptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="103" selection-start-line="11" selection-start-column="103" selection-end-line="11" selection-end-column="103" />
+          <folding>
+            <element signature="n#!!doc;n#deleteRec#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

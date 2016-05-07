@@ -7,9 +7,9 @@ function rowRecipeAndFillData(rec) {
     var headerName = document.createElement("h1");<!-- заголовок рецепта -->
     headerName.innerText = rec.name;
     section.appendChild(headerName);
-
-    section.appendChild(addImage(rec));<!-- картинки рецепта -->
     
+    section.appendChild(addImage(rec));<!-- картинки рецепта -->
+
     var ingridient = document.createElement("article");<!-- внутринний артикль ингридиентов -->
     ingridient.setAttribute("class", "ingridients");
     section.appendChild(ingridient);
@@ -22,10 +22,14 @@ function rowRecipeAndFillData(rec) {
     var cooking = document.createElement("article");<!-- внутренний артикль приготовления -->
     cooking.setAttribute("class", "cooking");
     section.appendChild(cooking);
+
     var h2_Cooking = document.createElement("h2");
     h2_Cooking.innerText = "Cooking";
     cooking.appendChild(h2_Cooking);
     cooking.appendChild(addCooking(rec));
+
+    section.appendChild(addBtnDel(rec));<!-- настройки рецепта -->
+    section.appendChild(addBtnUpd(rec));<!-- настройки рецепта -->
     
     return section;
 }
@@ -67,9 +71,8 @@ function addImage(rec) {<!-- картинка рецепта -->
         if(i==0){
             image.setAttribute("src", set_img[i]);
             image.setAttribute("class", "big_img");
-            image.setAttribute('onclick', 'image_change()');
+            //image.setAttribute('onclick', '');
             block_image.appendChild(image);
-            //block_image.innerHTML +="<br>";
         }
         else{
             image.setAttribute("class", "small_img");
@@ -80,8 +83,24 @@ function addImage(rec) {<!-- картинка рецепта -->
     }
     return block_image;
 }
-function image_change(element) {
+function image_change(element) {<!-- смена картинок -->
     var tmp = element.parentElement.firstElementChild.src;
     element.parentElement.firstElementChild.src = element.src;
     element.src = tmp;
+}
+function addBtnDel(rec) {<!-- настройки рецепта -->
+    var btn = document.createElement("button");
+    btn.setAttribute('value', rec.id);
+    btn.setAttribute('onclick', 'deleteRec(this.value)');
+    btn.setAttribute('class', 'btn_option');
+    btn.innerText = "D";
+    return btn;
+}
+function addBtnUpd(rec) {<!-- настройки рецепта -->
+    var btn = document.createElement("button");
+    btn.setAttribute('value', rec.id);
+    btn.setAttribute('onclick', 'updateRec(this.value)');
+    btn.setAttribute('class', 'btn_option');
+    btn.innerText = "R";
+    return btn;
 }
