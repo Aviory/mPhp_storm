@@ -73,14 +73,15 @@ function addImage(rec) {<!-- картинка рецепта -->
         }
         else{
             image.setAttribute("class", "small_img");
-            image.setAttribute('onclick', 'image_change(this.src)');
+            image.setAttribute('onclick', 'image_change(this)');
             image.setAttribute("src", set_img[i]);
             block_image.appendChild(image);
         }
     }
     return block_image;
 }
-function image_change(src) {
-    var block = document.getElementsByClassName('block_img');
-    block.firstElementChild.firstElementChild.src = src;
+function image_change(element) {
+    var tmp = element.parentElement.firstElementChild.src;
+    element.parentElement.firstElementChild.src = element.src;
+    element.src = tmp;
 }
