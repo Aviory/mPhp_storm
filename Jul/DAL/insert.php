@@ -23,8 +23,8 @@ foreach ($_FILES["images"]["error"] as $key => $error){
         $tmp_name = $_FILES["images"]["tmp_name"][$key];
         $size = $_FILES["images"]["size"][$key];
         $name = $_FILES["images"]["name"][$key];
-        copy($tmp_name, $uploadsdir . $size ."_julypop");
-        $rec->image .= "res/" .$size ."_julypop"."\n\r";
+        copy($tmp_name, $uploadsdir . $size ."_julypop.jpg");
+        $rec->image .= "res/" .$size ."_julypop.jpg"."\n\r";
     }
     else{
         echo "ерор:".$error;

@@ -8,7 +8,8 @@ function rowRecipeAndFillData(rec) {
     headerName.innerText = rec.name;
     section.appendChild(headerName);
 
-    addImage(section, rec);<!-- картинки рецепта -->
+    section.appendChild(addImage(rec));<!-- картинки рецепта -->
+    
     var ingridient = document.createElement("article");<!-- внутринний артикль ингридиентов -->
     ingridient.setAttribute("class", "ingridients");
     section.appendChild(ingridient);
@@ -57,20 +58,29 @@ function addCooking(rec) {<!-- пробег по приготовлению -->
     // }
     return p;
 }
-function addImage(section, rec) {<!-- картинка рецепта -->
-    var setimg = rec.image.split(/[\n\r]+/);
-    var image = document.createElement("div");
-    for (var i = 0; i < setimg.length-1; i++){
+function addImage(rec) {<!-- картинка рецепта -->
+    var set_img = rec.image.split(/[\n\r]+/);
+    var block_image = document.createElement("div");
+    block_image.setAttribute('class', 'block_img');
+    for (var i = 0; i < set_img.length-1; i++){
         var image = document.createElement("img");
         if(i==0){
-            image.setAttribute("src", setimg[i]);
+            image.setAttribute("src", set_img[i]);
             image.setAttribute("class", "big_img");
-            section.appendChild(image);
+            image.setAttribute('onclick', 'image_change()');
+            block_image.appendChild(image);
+            //block_image.innerHTML +="<br>";
         }
         else{
             image.setAttribute("class", "small_img");
-            image.setAttribute("src", setimg[i]);
-            section.appendChild(image);
+            image.setAttribute('onclick', 'image_change(this.src)');
+            image.setAttribute("src", set_img[i]);
+            block_image.appendChild(image);
         }
     }
+    return block_image;
+}
+function image_change(src) {
+    var block = document.getElementsByClassName('block_img');
+    block.firstElementChild.firstElementChild.src = src;
 }
