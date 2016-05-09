@@ -32,4 +32,5 @@ $stmt = $pdo->prepare("INSERT into recipes (rec_name, category, podcategory, ing
 $stmt->execute(array(':rec_name' => $rec->rec_name, ':category'=>$rec->category, ':podcategory' => $rec->podcategory, ':ingridients' =>$rec->ingridients, ':cooking'=>$rec->cooking, ':image' => $rec->image));
 $stmt = null;
 $pdo = null;
+
 header('Location: http://localhost/git/Jul/index.html'); exit;

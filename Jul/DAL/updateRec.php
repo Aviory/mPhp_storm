@@ -22,22 +22,21 @@ if(isset($_POST['ingridients'])){
 if(isset($_POST['cookings'])){
     $rec->cooking = $_POST['cookings'];
 }
-$uploadsdir = "/xampp/htdocs/git/Jul/res/";
-foreach ($_FILES["images"]["error"] as $key => $error){
-    if ($error == UPLOAD_ERR_OK) {
-        $tmp_name = $_FILES["images"]["tmp_name"][$key];
-        $size = $_FILES["images"]["size"][$key];
-        $name = $_FILES["images"]["name"][$key];
-        copy($tmp_name, $uploadsdir . $size ."_julypop.jpg");
-        $rec->image .= "res/" .$size ."_julypop.jpg"."\n\r";
-    }
-    else{
-        echo "ерор:".$error;
-        exit;
-    }
+if(isset($_POST['oldimage'])){
+    $rec->image = $_POST['oldimage'];
 }
+$uploadsdir = "/xampp/htdocs/git/Jul/res/";
+//foreach ($_FILES["images"]["error"] as $key => $error){
+//    if ($error == UPLOAD_ERR_OK) {
+//        $tmp_name = $_FILES["images"]["tmp_name"][$key];
+//        $size = $_FILES["images"]["size"][$key];
+//        $name = $_FILES["images"]["name"][$key];
+//        copy($tmp_name, $uploadsdir . $size ."_julypop.jpg");
+//        $rec->image .= "res/" .$size ."_julypop.jpg"."\n\r";
+//    }
+//}
 
-$stmt = $pdo->prepare("UPDATE recipes SET rec_name = :rec_name, category = :category, podcategory = :podcategory, ingridients = :ingridients, cooking = :cooking, image = :image where id = :id)");
+$stmt = $pdo->prepare("UPDATE recipes SET rec_name = :rec_name, category = :category, podcategory = :podcategory, ingridients = :ingridients, cooking = :cooking, image = :image where id = :id");
 $stmt->execute(array(':id' => $rec->id, ':rec_name' => $rec->rec_name, ':category'=>$rec->category, ':podcategory' => $rec->podcategory, ':ingridients' =>$rec->ingridients, ':cooking'=>$rec->cooking, ':image' => $rec->image));
 $stmt = null;
 $pdo = null;

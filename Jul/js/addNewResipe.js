@@ -36,30 +36,18 @@ function rowRecipeAndFillData(rec) {
 function add_ul(rec) {<!-- пробег по ингридиентам -->
     var ul = document.createElement("ul");
     var strIng = rec.ingridients;
-    ul.innerText = strIng;
-    //.val().split(/[\n\r]+/);
+    var ar = strIng.split(/[\n\r]+/);
 
-    // for (var i = 0; i < strIng.length; i++) {
-    //     var li = document.createElement("li");
-    //     if (i > 0) {
-    //         li.innerText = strIng[i];
-    //         ul.appendChild(li);
-    //     }
-    //     if (i == 0) {<!-- add заголовок рецепта -->
-    //         document.getElementById('main').lastElementChild.firstElementChild.innerText = strIng[i];
-    //     }
-    // }
+    for (var i = 0; i < ar.length; i++) {
+        var li = document.createElement("li");
+        li.innerText = ar[i];
+        ul.appendChild(li);
+    }
     return ul;
 }
-
 function addCooking(rec) {<!-- пробег по приготовлению -->
     var p = document.createElement("p");
     p.innerText = rec.cooking;
-    // var strCooking = $('#newCooking').val().split(/[\n\r]+/);
-    // for (var i = 0; i < strCooking.length; i++) {
-    //     p.innerHTML += strCooking[i];
-    //     p.innerHTML += "<br/>";
-    // }
     return p;
 }
 function addImage(rec) {<!-- картинка рецепта -->
@@ -99,7 +87,7 @@ function addBtnDel(rec) {<!-- настройки рецепта -->
 function addBtnUpd(rec) {<!-- настройки рецепта -->
     var btn = document.createElement("button");
     btn.setAttribute('value', rec.id);
-    btn.setAttribute('onclick', 'updateRec(this.value)');
+    btn.setAttribute('onclick', '');
     btn.setAttribute('class', 'btn_option');
     btn.innerText = "R";
     return btn;

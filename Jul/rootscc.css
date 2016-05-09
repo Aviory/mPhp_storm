@@ -249,5 +249,10 @@ footer, nav, header, section, aside {
     margin-bottom: 10px;
     margin-top: 20px;
 }
+.hides{
+    position: absolute;
+    opacity: 0;
+    top: -9999em;
+}
 /* конец секции редактирования */
 /* сделать беграунд цветом-картинкой время дня */
