@@ -35,6 +35,7 @@ function deleteRec(id) {
             if(xhr.status == 200) { // Сервер вернул код 200 (что хорошо)
                 var data = xhr.responseText; // Выводим ответ сервера
                 queryForCategory(data);
+                footerTimeSet();
             }
         }
     };
@@ -125,6 +126,8 @@ function updateRec(id) {
                 btn.setAttribute('value', 'обновить');
                 btn.setAttribute('class', 'btnAdd');
                 form.appendChild(btn);
+                
+                footerTimeSet();
             }
         }
     };

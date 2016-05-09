@@ -1,6 +1,10 @@
 /**
  * Created by Кудесник on 09.05.2016.
  */
+function init() {
+    getFooterTime()
+    getSumRecipes();
+}
 function footerTimeSet() {
     var d    = new Date();
     var day  = d.getDate();
@@ -17,7 +21,7 @@ function footerTimeSet() {
     xhr.send(time);
 }
 
-function footerTimeGet() {
+function getFooterTime(){
     var time = "";
     var xhr = new XMLHttpRequest();
     xhr.open("POST", 'DAL/footer/getTime.php', true);
@@ -37,4 +41,17 @@ function footerTimeGet() {
 function getMounth(i) {
     var mau = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     return mau[i];
+}
+function getSumRecipes() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'DAL/footer/getSum.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send();
+    xhr.onreadystatechange = function() { // Ждём ответа от сервера
+        if (xhr.readyState == 4) { // Ответ пришёл
+            if(xhr.status == 200) { // Сервер вернул код 200 (что хорошо)
+                document.getElementById('sum_resipe').innerText = xhr.responseText;
+            }
+        }
+    };
 }
