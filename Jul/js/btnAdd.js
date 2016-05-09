@@ -11,6 +11,7 @@ var newRecept
         form.setAttribute('enctype', 'multipart/form-data');
         form.setAttribute('method', 'post');
         form.setAttribute('action', 'DAL/insert.php');
+        form.setAttribute('onsubmit','footerTimeSet()');
         edit.appendChild(form);
 
         var h2_Ingridients = document.createElement("h2"); <!-- создание заголовока имени -->

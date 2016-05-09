@@ -212,6 +212,16 @@ footer, nav, header, section, aside {
     margin-left: 7px;
     margin-bottom: 5px;
 }
+.btn_ready_del{
+    float: right;
+
+    margin-right: 25px;
+    margin-bottom: 35px;
+}
+.btn_ready_del button{
+    width: 32px;
+    height: 22px;
+}
 /* конец секции рецепта */
 /* секция редактирования */
 #edits{

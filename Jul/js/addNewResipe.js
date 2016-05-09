@@ -79,7 +79,7 @@ function image_change(element) {<!-- смена картинок -->
 function addBtnDel(rec) {<!-- настройки рецепта -->
     var btn = document.createElement("button");
     btn.setAttribute('value', rec.id);
-    btn.setAttribute('onclick', 'deleteRec(this.value)');
+    btn.setAttribute('onclick', 'readyDel(this,this.value)');
     btn.setAttribute('class', 'btn_option');
     btn.innerText = "D";
     return btn;

@@ -10,8 +10,9 @@
     <script src="js/addNewResipe.js"></script>
     <script src="js/btnMenu.js"></script>
     <script src="js/btnOptions.js"></script>
+    <script src="js/footer.js"></script>
 	</head>
-<body>
+<body onload="footerTimeGet()">
 
 <!-- Шапка сайта -->
 
@@ -165,8 +166,8 @@
 <footer><!-- Футер сайта -->
     <p>
         <small>
-            Last updated
-            <time datetime="2012-08">
+            Last updated:
+            <time datetime="2012-08"    id="ftime">
                 August 2012
             </time>
         </small>

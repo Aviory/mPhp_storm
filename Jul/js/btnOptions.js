@@ -1,6 +1,29 @@
 /**
  * Created by Кудесник on 07.05.2016.
  */
+function readyDel(node, id) {
+    var div = document.createElement("div");
+    div.setAttribute('class', 'btn_ready_del');
+    div.setAttribute('id', 'ReadyDelete');
+    div.innerText = "Удалить?";
+    node.parentNode.appendChild(div);
+
+    var no = document.createElement("button");
+    no.setAttribute('onclick', 'removeReadyDel(this)');
+    no.setAttribute('class', 'btn_option');
+    no.innerText = "Нет";
+    div.appendChild(no);
+    var yes = document.createElement("button");
+    yes.setAttribute('value', id);
+    yes.setAttribute('onclick', 'deleteRec(this.value)');
+    yes.setAttribute('class', 'btn_option');
+    yes.innerText = "Да";
+    div.appendChild(yes);
+}
+function removeReadyDel(node) {
+    var div = node.parentNode;
+    document.getElementById('ReadyDelete').parentNode.removeChild(div);
+}
 function deleteRec(id) {
     var query = "id="+id;
     var xhr = new XMLHttpRequest();
