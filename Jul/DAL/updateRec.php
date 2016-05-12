@@ -40,4 +40,4 @@ $stmt = $pdo->prepare("UPDATE recipes SET rec_name = :rec_name, category = :cate
 $stmt->execute(array(':id' => $rec->id, ':rec_name' => $rec->rec_name, ':category'=>$rec->category, ':podcategory' => $rec->podcategory, ':ingridients' =>$rec->ingridients, ':cooking'=>$rec->cooking, ':image' => $rec->image));
 $stmt = null;
 $pdo = null;
-//header('Location: http://localhost/git/Jul/index.html'); exit;
+header('Location: http://localhost/git/Jul/index.html'); exit;

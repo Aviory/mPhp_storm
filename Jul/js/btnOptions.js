@@ -34,8 +34,8 @@ function deleteRec(id) {
         if (xhr.readyState == 4) { // Ответ пришёл
             if(xhr.status == 200) { // Сервер вернул код 200 (что хорошо)
                 var data = xhr.responseText; // Выводим ответ сервера
-                queryForCategory(data);
                 footerTimeSet();
+                queryForCategory(data);
             }
         }
     };
@@ -58,6 +58,7 @@ function updateRec(id) {
                 form.setAttribute('enctype', 'multipart/form-data');
                 form.setAttribute('method', 'post');
                 form.setAttribute('action', 'DAL/updateRec.php');
+                form.setAttribute('onsubmit','footerTimeSet()');
                 edit.appendChild(form);
 
                 var h2_Ingridients = document.createElement("h2"); <!-- создание заголовока имени -->
@@ -126,8 +127,6 @@ function updateRec(id) {
                 btn.setAttribute('value', 'обновить');
                 btn.setAttribute('class', 'btnAdd');
                 form.appendChild(btn);
-                
-                footerTimeSet();
             }
         }
     };

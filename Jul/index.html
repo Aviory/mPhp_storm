@@ -11,6 +11,7 @@
     <script src="js/btnMenu.js"></script>
     <script src="js/btnOptions.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/search.js"></script>
 	</head>
 <body onload="init()">
 
@@ -18,13 +19,10 @@
 
 <header id="headerInner">
 
-    <!-- Навигация -->
-
-    <nav id="headerNav">
-    </nav>
+    <!-- поиск -->
     <form id="searchform">
-        <input type="search" id="searchable" placeholder="I'm get ready for you..." />
-        <input type="submit" id="btnsearch" value="search" />
+        <input type="search" id="searchable" placeholder="I'm get ready for you..." onclick="initSeqrchAtribute()" />
+        <input type="button" id="btnsearch" value="search" onclick="" />
     </form>
     <!-- Конец навигации -->
 
@@ -165,14 +163,14 @@
 </div>
 <footer><!-- Футер сайта -->
     <p>
-        <small>
+        <label>
             Last updated:
             <time datetime="2012-08"    id="ftime">
                 August 2012
-            </time>
-            Sum recipe:
-            <div id="sum_resipe"></div>
-        </small>
+            </time><br>
+                Sum recipe:
+                <label id="sum_resipe"></label>
+        </label>
     </p>
 </footer>
 </body>

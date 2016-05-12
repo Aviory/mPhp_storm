@@ -19,7 +19,7 @@ main {
 header {
     background-color: #373737;
     color: #fff;
-    height: 160px;
+    height: 260px;
     padding-left: 275px;
     width: inherit;
     background-image: url(res/headerbroad.jpg);
@@ -27,8 +27,9 @@ header {
 }
 /* стили поиска */
 #searchform{
+    position: absolute;
+    margin-top: 220px;
     width: auto;
-    position: relative;
     width: 27%;
 }
 #searchable{
@@ -62,6 +63,9 @@ header {
 }
 #btnsearch:hover{
     opacity: 0.8;
+}
+.from_search{
+
 }
 
 /* конец стилей поиска */
@@ -160,20 +164,6 @@ aside{
     overflow: hidden;
     position:relative;
 }
-/* футер */
-footer {
-    background-color: #373737;
-    clear: both;
-    color: #fff;
-    padding: 50px 20px;
-}
-footer small a {
-    color: #eff;
-}
-/* конец футера */
-footer, nav, header, section, aside {
-    display: block;
-}
 /* секции рецепта */
 .ingridients{
     float: left;
@@ -201,9 +191,16 @@ footer, nav, header, section, aside {
     height: 260px;
 }
 .small_img{
-    padding-left: 10px;
+    margin-left: 10px;
     width: 45px;
     height: 30px;
+    transition: 0.2s all;
+}
+.small_img:hover{
+    margin-left: 10px;
+    width: 50px;
+    height: 35px;
+    border: 2px solid azure;
 }
 .btn_option{
     float: right;
@@ -265,4 +262,21 @@ footer, nav, header, section, aside {
     top: -9999em;
 }
 /* конец секции редактирования */
+/* футер */
+footer {
+    background-color: #373737;
+    clear: both;
+    color: #fff;
+    padding: 50px 20px;
+}
+footer small a {
+    color: #eff;
+}
+#sum_resipe{
+    margin-left: 10px;
+}
+/* конец футера */
+footer, nav, header, section, aside {
+    display: block;
+}
 /* сделать беграунд цветом-картинкой время дня */

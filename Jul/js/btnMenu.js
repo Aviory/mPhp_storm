@@ -21,6 +21,8 @@ function queryForCategory(category) {
                 edit.innerHTML = "";
 
                 edit.appendChild(btnAddNewRec());
+
+                init();<!-- обновить футер -->
             }
         }
     };
