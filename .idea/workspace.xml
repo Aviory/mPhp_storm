@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c17bd04f-b9a6-46df-b06f-b3efb2a9aaaa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jul/DAL/dataSearch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jul/js/search.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/DAL/updateRec.php" afterPath="$PROJECT_DIR$/Jul/DAL/updateRec.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/index.html" afterPath="$PROJECT_DIR$/Jul/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/js/btnMenu.js" afterPath="$PROJECT_DIR$/Jul/js/btnMenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/js/btnAdd.js" afterPath="$PROJECT_DIR$/Jul/js/btnAdd.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/js/btnOptions.js" afterPath="$PROJECT_DIR$/Jul/js/btnOptions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jul/rootscc.css" afterPath="$PROJECT_DIR$/Jul/rootscc.css" />
     </list>
@@ -31,21 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Jul/index.html">
+      <file leaf-file-name="btnAdd.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Jul/js/btnAdd.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Jul/js/search.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+            <state relative-caret-position="374">
+              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -54,8 +41,8 @@
       <file leaf-file-name="rootscc.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jul/rootscc.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="341">
+              <caret line="270" column="1" selection-start-line="270" selection-start-column="1" selection-end-line="270" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -91,15 +78,15 @@
         <option value="$PROJECT_DIR$/Jul/DAL/footer/setSum.php" />
         <option value="$PROJECT_DIR$/Jul/js/footer.js" />
         <option value="$PROJECT_DIR$/Jul/DAL/footer/getSum.php" />
-        <option value="$PROJECT_DIR$/Jul/js/btnAdd.js" />
-        <option value="$PROJECT_DIR$/Jul/js/btnOptions.js" />
         <option value="$PROJECT_DIR$/Jul/DAL/updateRec.php" />
         <option value="$PROJECT_DIR$/Jul/js/btnMenu.js" />
         <option value="$PROJECT_DIR$/Jul/js/addNewResipe.js" />
         <option value="$PROJECT_DIR$/Jul/DAL/dataSearch.php" />
         <option value="$PROJECT_DIR$/Jul/js/search.js" />
-        <option value="$PROJECT_DIR$/Jul/rootscc.css" />
         <option value="$PROJECT_DIR$/Jul/index.html" />
+        <option value="$PROJECT_DIR$/Jul/js/btnOptions.js" />
+        <option value="$PROJECT_DIR$/Jul/rootscc.css" />
+        <option value="$PROJECT_DIR$/Jul/js/btnAdd.js" />
       </list>
     </option>
   </component>
@@ -143,6 +130,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -213,7 +201,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -278,18 +265,19 @@
       <workItem from="1462634725943" duration="9060000" />
       <workItem from="1462787950744" duration="42187000" />
       <workItem from="1462833224440" duration="2272000" />
-      <workItem from="1463043777296" duration="9869000" />
+      <workItem from="1463043777296" duration="10004000" />
+      <workItem from="1463150624444" duration="6935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70337000" />
+    <option name="totallyTimeSpent" value="77407000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="23" width="1260" height="972" extended-state="0" />
-    <editor active="true" />
+    <frame x="7" y="23" width="1260" height="972" extended-state="1" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -324,6 +312,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Jul/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/rootscc.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Jul/js/footer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -363,9 +375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <marker date="1462822792042" expanded="true" signature="922:1080" placeholder="INSERT into recipes... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -468,16 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/js/btnOptions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc;n#readyDel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Jul/js/btnMenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -490,17 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-          <folding>
-            <marker date="1463044819783" expanded="true" signature="1069:1237" placeholder="UPDATE recip... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/js/addNewResipe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -516,9 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <marker date="1462103556040" expanded="true" signature="77:98" placeholder="SELECT * FRO... recipes" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,9 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="31" column="51" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="51" />
-          <folding>
-            <marker date="1462822792042" expanded="true" signature="922:1080" placeholder="INSERT into recipes... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -536,9 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding>
-            <marker date="1463050497771" expanded="true" signature="485:506" placeholder="SELECT * FRO... recipes" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,34 +531,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/js/btnAdd.js">
+    <entry file="file://$PROJECT_DIR$/Jul/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="103" column="36" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/rootscc.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Jul/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="500">
           <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jul/index.html">
+    <entry file="file://$PROJECT_DIR$/Jul/js/addNewResipe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+        <state relative-caret-position="-112">
+          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/rootscc.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="270" column="1" selection-start-line="270" selection-start-column="1" selection-end-line="270" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/js/btnOptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc;n#readyDel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jul/js/btnAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
           <folding />
         </state>
       </provider>

@@ -11,7 +11,7 @@ var newRecept
         form.setAttribute('enctype', 'multipart/form-data');
         form.setAttribute('method', 'post');
         form.setAttribute('action', 'DAL/insert.php');
-        form.setAttribute('onsubmit','footerTimeSet()');
+        form.setAttribute('onsubmit','return validate(this)');
         edit.appendChild(form);
 
         var h2_Ingridients = document.createElement("h2"); <!-- создание заголовока имени -->
@@ -57,6 +57,36 @@ var newRecept
         btn.setAttribute('value', 'загрузить');
         btn.setAttribute('class', 'btnAdd');
         form.appendChild(btn);
+    }
+    function showError(container, errorMessage) {
+        //container.className = 'error';
+        if(!document.getElementById('erorr_log')){
+            var msgElem = document.createElement('span');
+            msgElem.className = "error";
+            msgElem.innerHTML = errorMessage;
+            msgElem.setAttribute('id', 'erorr_log');
+            container.appendChild(msgElem);
+        }
+        else {
+            document.getElementById('erorr_log').innerHTML=errorMessage;
+        }
+    }
+    function validate(form) {
+        var elemens = form.elements;
+        var edit = document.getElementById('edits');
+        var query = true;
+        if(!elemens.categoryes.value){
+            showError(edit, ' Укажите категорию.');
+            query = false;
+        }
+        if(!elemens.recname.value){
+            showError(edit, ' Укажите название рецепта.');
+            query = false;
+        }
+        if(query==true){
+            footerTimeSet();
+        }
+        return query;
     }
 
     function categorySelect() {
