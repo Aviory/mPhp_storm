@@ -55,18 +55,20 @@ function addImage(rec) {<!-- картинка рецепта -->
     var block_image = document.createElement("div");
     block_image.setAttribute('class', 'block_img');
     for (var i = 0; i < set_img.length-1; i++){
-        var image = document.createElement("img");
-        if(i==0){
-            image.setAttribute("src", set_img[i]);
-            image.setAttribute("class", "big_img");
-            //image.setAttribute('onclick', '');
-            block_image.appendChild(image);
-        }
-        else{
-            image.setAttribute("class", "small_img");
-            image.setAttribute('onclick', 'image_change(this)');
-            image.setAttribute("src", set_img[i]);
-            block_image.appendChild(image);
+        if(set_img[i]!="")
+        {
+            var image = document.createElement("img");
+            if (block_image.childNodes[0] == null) {
+                image.setAttribute("src", set_img[i]);
+                image.setAttribute("class", "big_img");
+                block_image.appendChild(image);
+            }
+            else {
+                image.setAttribute("class", "small_img");
+                image.setAttribute('onclick', 'image_change(this)');
+                image.setAttribute("src", set_img[i]);
+                block_image.appendChild(image);
+            }
         }
     }
     return block_image;
@@ -87,7 +89,7 @@ function addBtnDel(rec) {<!-- настройки рецепта -->
 function addBtnUpd(rec) {<!-- настройки рецепта -->
     var btn = document.createElement("button");
     btn.setAttribute('value', rec.id);
-    btn.setAttribute('onclick', '');
+    btn.setAttribute('onclick', 'updateRec(this.value)');
     btn.setAttribute('class', 'btn_option');
     btn.innerText = "R";
     return btn;

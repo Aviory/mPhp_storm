@@ -63,7 +63,7 @@ function updateRec(id) {
                 form.setAttribute('enctype', 'multipart/form-data');
                 form.setAttribute('method', 'post');
                 form.setAttribute('action', 'DAL/updateRec.php');
-                form.setAttribute('onsubmit','footerTimeSet()');
+                form.setAttribute('onsubmit','return validate(this)');
                 edit.appendChild(form);
 
                 var h2_Ingridients = document.createElement("h2"); <!-- создание заголовока имени -->
@@ -90,7 +90,7 @@ function updateRec(id) {
                 newTxtIng.setAttribute("name", "ingridients");
                 newTxtIng.rows = 11;
                 newTxtIng.cols = 35;
-                newTxtIng.innerText = txtsplit(rec.ingridients);
+                txtsplit(newTxtIng, rec.ingridients);
                 newTxtIng.maxLength = 500;
                 form.appendChild(newTxtIng);
 
@@ -103,7 +103,7 @@ function updateRec(id) {
                 newTxtCook.setAttribute("name", "cookings");
                 newTxtCook.rows = 15;
                 newTxtCook.cols = 100;
-                newTxtCook.innerText = txtsplit(rec.cooking);;
+                newTxtCook.innerText = txtsplit(newTxtCook, rec.cooking);;
                 newTxtIng.maxLength = 3000;
                 form.appendChild(newTxtCook);
 
@@ -132,15 +132,22 @@ function updateRec(id) {
                 btn.setAttribute('value', 'обновить');
                 btn.setAttribute('class', 'btnAdd');
                 form.appendChild(btn);
+                btn.scrollIntoView(false);
             }
         }
     };
 }
-function txtsplit(text) {
+function txtsplit(node, text) {
     var ar = text.split(/[\n\r]+/);
-    var resp = "";
     for (var i = 0; i < ar.length; i++) {
-        resp += ar[i] + "\n\r";
+        if(ar[i]!="" && ar[i]!=" "&& ar[i]!=null){
+            if(i==ar.length-1){
+                node.value += ar[i];
+            }
+            else {
+                node.value += ar[i] + "\n";
+            }
+        }
+
     }
-    return resp;
 }

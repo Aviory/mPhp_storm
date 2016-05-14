@@ -83,6 +83,14 @@ var newRecept
             showError(edit, ' Укажите название рецепта.');
             query = false;
         }
+        if(!elemens.ingridients.value){
+            showError(edit, ' Укажите ингридиенты.');
+            query = false;
+        }
+        if(!elemens.cookings.value){
+            showError(edit, ' Укажите приготовление.');
+            query = false;
+        }
         if(query==true){
             footerTimeSet();
         }
