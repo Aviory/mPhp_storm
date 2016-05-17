@@ -81,7 +81,7 @@ function updateRec(id) {
                 form.appendChild(categorySelect()); <!-- создание категорий и подкатегорий -->
 
                 var h2_Ingridients = document.createElement("h2"); <!-- создание заголовок ингридиенты -->
-                h2_Ingridients.innerText = "Ingridients";
+                h2_Ingridients.innerText = "Ingredients";
                 form.appendChild(h2_Ingridients);
 
                 form.appendChild(fileLoad());<!--add картинка -->

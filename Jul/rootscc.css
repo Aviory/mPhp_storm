@@ -185,16 +185,27 @@ aside{
     padding-right: 1px;
     width: 420px;
     height: 330px;
+    overflow: hidden;
 }
 .big_img{
+
+    height: 260px;
+    overflow: hidden;
+}
+.div_bigimg{
     width: 400px;
     height: 260px;
+    text-align: center;
 }
 .small_img{
     margin-left: 10px;
+    margin-top: 5px;
     width: 45px;
     height: 30px;
     transition: 0.2s all;
+    min-width: 45px;
+    min-height: 30px;
+    overflow: hidden;
 }
 .small_img:hover{
     margin-left: 10px;

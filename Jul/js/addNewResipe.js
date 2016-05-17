@@ -15,7 +15,7 @@ function rowRecipeAndFillData(rec) {
     section.appendChild(ingridient);
 
     var h2_Ingridients = document.createElement("h2");<!-- заголовок ингридиентов -->
-    h2_Ingridients.innerText = "Ingridients";
+    h2_Ingridients.innerText = "Ingredients";
     ingridient.appendChild(h2_Ingridients);
     ingridient.appendChild(add_ul(rec));
 
@@ -59,9 +59,13 @@ function addImage(rec) {<!-- картинка рецепта -->
         {
             var image = document.createElement("img");
             if (block_image.childNodes[0] == null) {
+                var div_bigimg = document.createElement("div");
+                div_bigimg.setAttribute('class', 'div_bigimg');
+
                 image.setAttribute("src", set_img[i]);
                 image.setAttribute("class", "big_img");
-                block_image.appendChild(image);
+                div_bigimg.appendChild(image);
+                block_image.appendChild(div_bigimg);
             }
             else {
                 image.setAttribute("class", "small_img");
@@ -74,8 +78,8 @@ function addImage(rec) {<!-- картинка рецепта -->
     return block_image;
 }
 function image_change(element) {<!-- смена картинок -->
-    var tmp = element.parentElement.firstElementChild.src;
-    element.parentElement.firstElementChild.src = element.src;
+    var tmp = element.parentElement.firstElementChild.firstElementChild.src;
+    element.parentElement.firstElementChild.firstElementChild.src = element.src;
     element.src = tmp;
 }
 function addBtnDel(rec) {<!-- настройки рецепта -->
