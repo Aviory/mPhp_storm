@@ -21,8 +21,8 @@
 
     <!-- поиск -->
     <form id="searchform">
-        <input type="search" id="searchable" placeholder="I'm get ready for you..." onclick="initSeqrchAtribute()" />
-        <input type="button" id="btnsearch" value="search" onclick="" />
+        <input type="search" id="searchable" name="from_query" placeholder="I'm get ready for you..." onclick="initSeqrchAtribute()" />
+        <input type="button" id="btnsearch" value="search" onclick="beginSearch()" />
     </form>
     <!-- Конец навигации -->
 
@@ -70,7 +70,6 @@
                 <li><a href="#" onclick="queryForCategory('podcategoryes=Десерты')">Десерты</a></li>
                 <li><a href="#" onclick="queryForCategory('podcategoryes=Батончики')">Батончики</a></li>
                 <li><a href="#" onclick="queryForCategory('podcategoryes=Завтраки')">Завтраки</a></li>
-                <li><a href="#" onclick="queryForCategory('podcategoryes=Гарниры')">Гарниры</a></li>
             </ul>
         </li>
         <li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Гарниры')">Гарниры</a>
@@ -106,14 +105,27 @@
         </li>
         <li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Соусы')">Соусы</a>
             <ul class="drop_menu">
+				<li><a href="#" onclick="queryForCategory('podcategoryes=Соусы')">Соусы</a></li>
+				<li><a href="#" onclick="queryForCategory('podcategoryes=Кремы')">Кремы</a></li>
             </ul>
         </li>
         <li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Каши')">Каши</a>
             <ul class="drop_menu">
             </ul>
         </li>
-        <li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Мясные блюда')">Мясные блюда</a></li>
+        <li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Мясные блюда')">Мясные блюда</a>
+			<ul class="drop_menu">
+				<li><a href="#" onclick="queryForCategory('podcategoryes=Холодные')">Холодные</a></li>
+                <li><a href="#" onclick="queryForCategory('podcategoryes=Горячие')">Горячие</a></li>
+            </ul>
+		</li>
         <li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Рыбные блюда')">Рыбные блюда</a></li>
+		<li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Напитки')">Напитки</a>
+			<ul class="drop_menu">
+				<li><a href="#" onclick="queryForCategory('podcategoryes=Кофе/чай')">Кофе/чай</a></li>
+                <li><a href="#" onclick="queryForCategory('podcategoryes=Смузи/коктейли')">Смузи/коктейли</a></li>
+            </ul>
+		</li>
     </menu>
 </nav>
 <main id="main">

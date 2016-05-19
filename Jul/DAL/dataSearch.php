@@ -1,31 +1,63 @@
 <?php
 require_once 'config.php';
+
 $from_query;
+$from_category;
+$from_podcategory;
+$exec_array;
+$sql_query = "SELECT * FROM recipes ";
 
 if(isset($_POST['from_query'])){
     $from_query = $_POST['from_query'];
 }
 if(isset($_POST['from_category'])){
     $from_category = $_POST['from_category'];
-}
-if(isset($_POST['from_podcategory'])){
-    $from_podcategory = $_POST['from_podcategory'];
-}
-if(isset($_POST['from_name'])){
-    $from_name = $_POST['from_name'];
-}
-if(isset($_POST['from_ingridient'])){
-    $from_ingridient = $_POST['from_ingridient'];
+    if($from_category!="по всему сайту"){
+        if(isset($_POST['from_podcategory'])){
+            $from_podcategory = $_POST['from_podcategory'];
+            if($from_podcategory != "все подкатегории"){
+                $sql_query .= "WHERE podcategory = :from_podcategory ";
+                $exec_array = array(':from_query' => '%'.$from_query.'%', ':from_podcategory' => $from_podcategory);
+            }
+            else{
+                $sql_query .= "WHERE category = :from_category ";
+                $exec_array = array(':from_query' => '%'.$from_query.'%', ':from_category' => $from_category);
+            }
+        }
+        else{
+            $sql_query .= "WHERE category = :from_category ";
+            $exec_array = array(':from_query' => '%'.$from_query.'%', ':from_category' => $from_category);
+        }
+    }
+    else{
+        $exec_array = array(':from_query' => '%'.$from_query.'%');
+    }
 }
 
-$stmt = $pdo->prepare('SELECT * FROM recipes');
-$stmt->execute(array(':rec_name' => $rec->rec_name));
+if(isset($_POST['form_objectSelect'])){
+    if($from_category == "по всему сайту"){
+        $sql_query .= "WHERE ";
+    }
+    else{
+        $sql_query .= "AND ";
+    }
+    $form_objectSelect = $_POST['form_objectSelect'];
+    if($form_objectSelect == "from_name"){
+        $sql_query .= "rec_name LIKE :from_query";
+    }
+    if($form_objectSelect == "from_ingridient"){
+        $sql_query .= "ingridients LIKE :from_query";
+    }
+}
+
+$stmt = $pdo->prepare($sql_query);
+$stmt->execute($exec_array);
 $reclist = array();
 while ($row = $stmt->fetch())
 {
     $rec              = array(
         "id"          => $row['id'],
-        "name"        => $row['name'],
+        "name"        => $row['rec_name'],
         "category"    => $row['category'],
         "podcategory" => $row['podcategory'],
         "ingridients" => $row['ingridients'],
@@ -38,4 +70,3 @@ echo json_encode($reclist);
 
 $stmt = null;
 $pdo = null;
-?>
