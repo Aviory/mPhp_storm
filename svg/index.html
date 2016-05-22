@@ -12,44 +12,23 @@
     <script src="js/btnOptions.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/search.js"></script>
-</head>
+	</head>
 <body onload="init()">
+<aside>
+    <button value="Up" id="btn_pageUp" onclick="pageUp()" class="btn_pageUp">Up</button>
+</aside>
 <!-- Шапка сайта -->
-<header>
+
+<header id="headerInner">
+
     <!-- поиск -->
     <form id="searchform">
         <input type="search" id="searchable" name="from_query" placeholder="I'm get ready for you..." onclick="initSeqrchAtribute()" />
         <input type="button" id="btnsearch" value="search" onclick="beginSearch()" />
     </form>
     <!-- Конец навигации -->
-    <div id="paint">
-        <div id="btn_panel">
-            <button onclick="select = 'paint'" class="paint_panel">P</button>
-            <button onclick="select = 'erase'" class="paint_panel">E</button>
-            <button onclick="paint_clear()" class="paint_panel">C</button>
 
-            <input type="color" onchange="ctx.strokeStyle=event.target.value" value="#999999" autocomplete="off" class="paint_panel">
-            <select id="paint_size" onchange="ctx.lineWidth = this.options[this.selectedIndex].value" class="paint_panel">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-        </div>
-        <canvas id="paintBoard"  width="1250" height="260"></canvas>
-    </div>
-    <script src="js/canvas.js"></script>
-</header>
-<aside>
-    <button value="Up" id="btn_pageUp" onclick="pageUp()" class="btn_pageUp">Up</button>
-</aside>
-<!-- Конец шапки сайта -->
+</header><!-- Конец шапки сайта -->
 <nav id="leftNav">
     <menu type="context">
         <li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Первые блюда')">Первые блюда</a>

@@ -16,35 +16,20 @@ main {
 }
 /* конец редакции тела */
 /* шапка */
-#paintBoard {
-    position: inherit;
-    width: auto;
-    height: auto;
-}
-#paint{
+header {
+    background-color: #373737;
+    color: #fff;
     height: 260px;
-    width: auto;
+    padding-left: 275px;
+    width: inherit;
     background-image: url(res/headerbroad.jpg);
     background-repeat:repeat-x;
-}
-#btn_panel{
-    position: absolute;
-}
-.paint_panel{
-    /*width: 37px;*/
-    /*height: 28px;*/
-    opacity: 0.4;
-    border-radius: 3px;
-}
-.paint_panel:hover{
-    opacity: 0.9;
 }
 /* стили поиска */
 #searchform{
     position: absolute;
     margin-top: 220px;
     width: auto;
-    padding-left: 275px;
 }
 #searchable{
     width: 385px;
@@ -68,7 +53,7 @@ main {
 #btnsearch{
     position: absolute;
     top: 3px;
-    left: 578px;
+    left: 305px;
     width: 80px;
     height: 30px ;
     border-radius: 15px;
@@ -120,7 +105,7 @@ menu {
 .btn_pageUp{
     position: fixed;
     margin-left: 10px;
-    margin-top: 555px;
+    margin-top: 820px;
     margin-bottom: 60px;
     opacity: 0.4;
     padding: 8px 8px 9px 9px;

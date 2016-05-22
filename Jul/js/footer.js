@@ -2,8 +2,9 @@
  * Created by Кудесник on 09.05.2016.
  */
 function init() {
-    getFooterTime()
+    getFooterTime();
     getSumRecipes();
+    getPaintBroad();
 }
 function footerTimeSet() {
     var d    = new Date();

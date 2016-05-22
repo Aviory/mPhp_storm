@@ -7,11 +7,13 @@
  */
 require_once 'config.php';
 
-if(isset($_POST['data_broad'])){
-    $img = $_POST['data_broad'];
-}
+if(isset($_POST['data_Broad'])){
+    $img = $_POST['data_Broad'];
+    $img = str_replace(' ', '+', $img);
 
-$stmt = $pdo->prepare("UPDATE julypop_data_broad SET img = :img where dates = dates");
-$stmt->execute(array(':img' => $img));
-$stmt = null;
-$pdo = null;
+    $stmt = $pdo->prepare("UPDATE julypop_data_broad SET img = :img where id = 1");
+    $stmt->execute(array(':img' => $img));
+    $stmt = null;
+    $pdo = null;
+    echo $img;
+}

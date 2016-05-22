@@ -148,6 +148,8 @@ function txtsplit(node, text) {
                 node.value += ar[i] + "\n";
             }
         }
-
     }
+}
+function pageUp() {
+    window.scrollTo(0,0);
 }
