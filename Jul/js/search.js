@@ -26,7 +26,7 @@ function beginSearch() {
 }
 function initSeqrchAtribute() {
     var form = document.getElementById('searchform');
-    if(!document.getElementById('categoryes')){
+    if(!document.getElementById('from_categoryes')){
         form.appendChild(fromCategorySelect());
         form.appendChild(fromObjectSelect());
     }
@@ -35,7 +35,7 @@ function initSeqrchAtribute() {
 function fromCategorySelect() {
     var select = document.createElement('select');
     select.setAttribute('size', '1');
-    select.setAttribute('id', 'categoryes');
+    select.setAttribute('id', 'from_categoryes');
     select.setAttribute('class', 'from_search');
     select.setAttribute('name', 'from_category');
     select.setAttribute('onchange', 'fromPodcategorySelect(this.options[this.selectedIndex].value)');
@@ -52,15 +52,15 @@ function fromCategorySelect() {
     return select;
 }
 function fromPodcategorySelect(category) {
-    if (!document.getElementById('podcategory')) {
+    if (!document.getElementById('from_podcategory')) {
         var select = document.createElement('select');
         select.setAttribute('size', '1');
         select.setAttribute('name', 'from_podcategory');
-        select.setAttribute('id', 'podcategory');
+        select.setAttribute('id', 'from_podcategory');
         select.setAttribute('class', 'from_search');
     }
     else {
-        var select = document.getElementById('podcategory');
+        var select = document.getElementById('from_podcategory');
         select.innerHTML = "";
     }
     var opt = addOption("все подкатегории");
