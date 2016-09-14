@@ -17,7 +17,8 @@ while ($row = $stmt->fetch())
         "podcategory" => $row['podcategory'],
         "ingridients" => $row['ingridients'],
         "cooking"     => $row['cooking'],
-        "image"       => $row['image']
+        "image"       => $row['image'],
+        "liked"       => $row['liked']
     );
 }
 $stmt = null;

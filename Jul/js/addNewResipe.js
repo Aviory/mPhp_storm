@@ -28,6 +28,7 @@ function rowRecipeAndFillData(rec) {
     cooking.appendChild(h2_Cooking);
     cooking.appendChild(addCooking(rec));
 
+    section.appendChild(addBtnCheck(rec));
     section.appendChild(addBtnDel(rec));<!-- настройки рецепта -->
     section.appendChild(addBtnUpd(rec));<!-- настройки рецепта -->
     
@@ -96,5 +97,16 @@ function addBtnUpd(rec) {<!-- настройки рецепта -->
     btn.setAttribute('onclick', 'updateRec(this.value)');
     btn.setAttribute('class', 'btn_option');
     btn.innerText = "R";
+    return btn;
+}
+function addBtnCheck(rec) {
+    var btn = document.createElement("input");
+    btn.setAttribute('type', 'checkbox');
+    if(rec.liked == "true"){
+        btn.setAttribute('checked', '');
+    }
+    btn.setAttribute('class', 'btn_option');
+    btn.setAttribute('value', rec.id);
+    btn.setAttribute('onclick', 'addLikeRec(this.value, this.checked)');
     return btn;
 }

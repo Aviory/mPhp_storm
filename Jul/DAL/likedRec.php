@@ -1,15 +1,6 @@
 <?php
 require_once 'config.php';
-if(isset($_POST['podcategoryes'])){
-    $podcateg = $_POST['podcategoryes'];
-    $stmt = $pdo->prepare('SELECT * FROM recipes WHERE podcategory = :podcategoryes');
-    $stmt->execute(array(':podcategoryes' => $podcateg));
-}
-if(isset($_POST['categoryes'])){
-    $categ = $_POST['categoryes'];
-    $stmt = $pdo->prepare('SELECT * FROM recipes WHERE category = :categoryes');
-    $stmt->execute(array(':categoryes' => $categ));
-}
+$stmt = $pdo->query('SELECT * FROM recipes where liked="true"');
 $reclist = array();
 while ($row = $stmt->fetch())
 {
@@ -26,7 +17,5 @@ while ($row = $stmt->fetch())
     $reclist[] = $rec;
 }
 echo json_encode($reclist);
-//echo $row['name'] . "<br>" ;
 $stmt = null;
 $pdo = null;
-?>

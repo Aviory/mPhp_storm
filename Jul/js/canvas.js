@@ -18,19 +18,18 @@ function click_down(e) {
     ctx.beginPath();
     if(select == "paint"){
         ctx.moveTo(mouse.x, mouse.y);
-        paintBoard.addEventListener("mousemove", onPaint);
 		getPaintBroad();
-		save_broad();
+        paintBoard.addEventListener("mousemove", onPaint);
     }
     if(select == "erase"){
         ctx.clearRect(mouse.x, mouse.y, 5, 5);
         paintBoard.addEventListener("mousemove", onErase);
-		save_broad();
     }
 }
 paintBoard.addEventListener('mouseup', function() {
     paintBoard.removeEventListener('mousemove', onPaint, false);
     paintBoard.removeEventListener('mousemove', onErase, false);
+	save_broad();
 }, false);
 function onPaint(e) {
     ctx.lineTo(mouse.x, mouse.y);

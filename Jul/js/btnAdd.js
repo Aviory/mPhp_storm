@@ -103,7 +103,7 @@ var newRecept
         select.setAttribute('name', 'categoryes');
         select.setAttribute('onchange', 'podcategorySelect(this.options[this.selectedIndex].value)');
         var drop_menu = document.getElementById("leftNav").firstElementChild;
-        for (var i=0;i<drop_menu.childElementCount;i++){
+        for (var i=0;i<drop_menu.childElementCount-1;i++){
             var str_category = drop_menu.children[i].firstElementChild.innerText;
             select.appendChild(addOption(str_category));
         }

@@ -23,7 +23,7 @@ main {
 }
 #paint{
     height: 260px;
-    width: auto;
+    width: 1920px;
     background-image: url(res/headerbroad.jpg);
     background-repeat:repeat-x;
 }
@@ -108,9 +108,20 @@ main {
     border: 1px solid #373737;
     margin-top: 50px;
     margin-left: 25px;
-    height: 520px;
+    height: 600px;
     width: 200px;
-    background-image: url(res/schoolboard.png);
+    background-image: url(res/headerbroad.jpg);
+    display: block;
+}
+#leftNavTen{
+    float: left;
+    background-color: #eee;
+    border: 1px solid #373737;
+    margin-top: 50px;
+    margin-left: 25px;
+    height: 555px;
+    width: 200px;
+    background-image: url(res/headerbroad.jpg);
     display: block;
 }
 menu {
@@ -120,7 +131,7 @@ menu {
 .btn_pageUp{
     position: fixed;
     margin-left: 10px;
-    margin-top: 555px;
+    margin-top: 585px;
     margin-bottom: 60px;
     opacity: 0.4;
     padding: 8px 8px 9px 9px;
@@ -143,7 +154,7 @@ menu {
     opacity: 0;
     top: -9999em;
     transition: 0.5s opacity;
-    background-image: url(res/schoolboard.png);
+    background-image: url(res/headerbroad.jpg);
 }
 .list_menu:hover .drop_menu{
     opacity: 1;
@@ -318,6 +329,7 @@ footer {
     clear: both;
     color: #fff;
     padding: 50px 20px;
+    width: 1880px;
 }
 footer small a {
     color: #eff;

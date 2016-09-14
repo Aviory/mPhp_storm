@@ -42,7 +42,7 @@
                 <option value="10">10</option>
             </select>
         </div>
-        <canvas id="paintBoard"  width="1250" height="260"></canvas>
+        <canvas id="paintBoard"  width="1920" height="260"></canvas>
     </div>
     <script src="js/canvas.js"></script>
 </header>
@@ -56,7 +56,6 @@
             <ul class="drop_menu">
                 <li><a href="#" onclick="queryForCategory('podcategoryes=Супы')">Супы</a></li>
                 <li><a href="#" onclick="queryForCategory('podcategoryes=Крем-суп')">Крем-суп</a></li>
-                <li><a href="#" onclick="queryForCategory('podcategoryes=Другие')">Другие</a></li>
             </ul>
         </li>
         <li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Выпечка')">Выпечка</a>
@@ -87,12 +86,13 @@
                 <li><a href="#" onclick="queryForCategory('podcategoryes=Шоколадные')">Шоколадные</a></li>
                 <li><a href="#" onclick="queryForCategory('podcategoryes=Чизкейки')">Чизкейки</a></li>
             </ul>
-        </li>
-        <li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Десерты')">Диетическое</a>
+        </li>        
+		<li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Батончики')">Батончики</a>
             <ul class="drop_menu">
-                <li><a href="#" onclick="queryForCategory('podcategoryes=Десерты')">Десерты</a></li>
-                <li><a href="#" onclick="queryForCategory('podcategoryes=Батончики')">Батончики</a></li>
-                <li><a href="#" onclick="queryForCategory('podcategoryes=Завтраки')">Завтраки</a></li>
+            </ul>
+        </li>
+		<li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Завтраки')">Завтраки</a>
+            <ul class="drop_menu">
             </ul>
         </li>
         <li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Гарниры')">Гарниры</a>
@@ -105,7 +105,7 @@
             <li><a href="#" onclick="queryForCategory('podcategoryes=Фрукты')">Фрукты</a></li>
             <li><a href="#" onclick="queryForCategory('podcategoryes=Лепешки')">Лепешки</a></li>
         </ul>
-    </li>
+		</li>
         <li class="list_menu"><a href="#" onclick="queryForCategory('categoryes=Алкоголь')">Алкоголь</a>
             <ul class="drop_menu">
             </ul>
@@ -149,6 +149,8 @@
                 <li><a href="#" onclick="queryForCategory('podcategoryes=Смузи/коктейли')">Смузи/коктейли</a></li>
             </ul>
 		</li>
+        <li class="list_menu"><a href="#" onclick="queryForTenRec()">Последние рецепты</a></li>
+        <li class="list_menu"><a href="#" onclick="liked()">Закладки</a></li>
     </menu>
 </nav>
 <main id="main">
