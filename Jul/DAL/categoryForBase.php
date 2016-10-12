@@ -21,7 +21,8 @@ while ($row = $stmt->fetch())
         "ingridients" => $row['ingridients'],
         "cooking"     => $row['cooking'],
         "image"       => $row['image'],
-        "liked"       => $row['liked']
+        "liked"       => $row['liked'],
+        "raiting"     => $row['raiting']
     );
     $reclist[] = $rec;
 }

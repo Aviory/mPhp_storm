@@ -1,18 +1,21 @@
 :root{
-    background-color: rgb(56,41,48);
+
 }
 /* Тело */
 body {
     margin: 0 auto;
+    background-color: #373737;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 main {
-    background-color: rgba(255, 255, 255, .9);
-    min-height: 350px;
+    min-height: 0px;
     margin: 0 auto;
     width: 65%;
     display: block;
     margin-left: 50px;
     float: left;
+    min-height: calc(100vh - 544px);
 }
 /* конец редакции тела */
 /* шапка */
@@ -108,7 +111,7 @@ main {
     border: 1px solid #373737;
     margin-top: 50px;
     margin-left: 25px;
-    height: 600px;
+    height: 635px;
     width: 200px;
     background-image: url(res/headerbroad.jpg);
     display: block;
@@ -131,7 +134,7 @@ menu {
 .btn_pageUp{
     position: fixed;
     margin-left: 10px;
-    margin-top: 585px;
+    margin-top: 545px;
     margin-bottom: 60px;
     opacity: 0.4;
     padding: 8px 8px 9px 9px;
@@ -186,7 +189,7 @@ menu {
     text-decoration: none;
     font-family: Batang;
     background-repeat: inherit;
-    width: 144px;
+    width: 145px;
     margin-top: 5px;
     transition: 0.3s all;
 }
@@ -273,7 +276,74 @@ aside{
     width: 32px;
     height: 22px;
 }
-/* конец секции рецепта */
+.raiting input:checked ~ label, .raiting label, .raiting label:hover, .raiting label:hover ~ label {
+    background: url("res/doesnotsugar.png") no-repeat;
+}
+.raiting {
+    margin-top: 20px;
+    /*fix floating problems*/
+    overflow: hidden;
+    *zoom: 1;
+    /*end of fix floating problems*/
+
+    position: relative;
+    float: right;
+}
+
+.raiting input {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+
+    width: 43px;
+    height: 40px;
+
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.raiting input:checked ~ label {
+    background-position: 0 -38px;
+    height: 40px;
+    width: 43px;
+}
+
+.raiting label {
+    background-position: 0 0;
+    height: 40px;
+    width: 43px;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.raiting label:hover, .raiting label:hover ~ label {
+    background-position: 0 -38px;
+    height: 40px;
+    width: 43px;
+}
+.raiting #star-0 {
+    left: 0px;
+}
+.raiting #star-1 {
+    left: 53px;
+}
+.raiting #star-2 {
+    left: 106px;
+}
+.raiting #star-3 {
+    left: 159px;
+}
+.raiting #star-4 {
+    left: 212px;
+}
+.raiting #star-5 {
+    left: 265px;
+}
+    /* конец секции рецепта */
 /* секция редактирования */
 #edits{
     float:inherit;
@@ -330,6 +400,7 @@ footer {
     color: #fff;
     padding: 50px 20px;
     width: 1880px;
+    height: 100px;
 }
 footer small a {
     color: #eff;

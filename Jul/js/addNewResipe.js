@@ -4,10 +4,12 @@
 function rowRecipeAndFillData(rec) {
     var section = document.createElement("article");<!-- внешний артикль всего блока -->
 
+    section.appendChild(addStarsDiv(rec));<!-- рейтинг -->
+
     var headerName = document.createElement("h1");<!-- заголовок рецепта -->
     headerName.innerText = rec.name;
     section.appendChild(headerName);
-    
+
     section.appendChild(addImage(rec));<!-- картинки рецепта -->
 
     var ingridient = document.createElement("article");<!-- внутринний артикль ингридиентов -->
@@ -31,6 +33,7 @@ function rowRecipeAndFillData(rec) {
     section.appendChild(addBtnCheck(rec));
     section.appendChild(addBtnDel(rec));<!-- настройки рецепта -->
     section.appendChild(addBtnUpd(rec));<!-- настройки рецепта -->
+
     
     return section;
 }
@@ -108,5 +111,28 @@ function addBtnCheck(rec) {
     btn.setAttribute('class', 'btn_option');
     btn.setAttribute('value', rec.id);
     btn.setAttribute('onclick', 'addLikeRec(this.value, this.checked)');
+    return btn;
+}
+function addStarsDiv(rec) {
+    var tmp = [0,5,4,3,2,1];
+    var btn = document.createElement("div");
+    btn.setAttribute('class', 'raiting');
+    btn.setAttribute('id', 'raiting-input');
+    for (var i=1;i<=5;i++){
+        var tmpRadio = document.createElement("input");
+        tmpRadio.setAttribute('type', 'radio');
+        tmpRadio.setAttribute('id', 'star-'+rec.id+i);
+        tmpRadio.setAttribute('name', rec.id);
+        if(tmp[rec.raiting]==i){
+            tmpRadio.setAttribute('checked', '');
+        }
+        tmpRadio.setAttribute('value', i);
+        tmpRadio.setAttribute('onclick', 'changeRaiting(this.name, this.value)');
+        btn.appendChild(tmpRadio);
+
+        var tmpLabel = document.createElement("label");
+        tmpLabel.setAttribute('for', 'star-'+rec.id+i);
+        btn.appendChild(tmpLabel);
+    }
     return btn;
 }

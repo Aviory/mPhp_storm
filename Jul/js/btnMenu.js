@@ -93,3 +93,19 @@ function addLikeRec(id, check) {
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(query);
 }
+function changeRaiting(id, value) {
+    var tmp = [0,5,4,3,2,1];
+    var query = "id="+id+"&rait="+tmp[value];
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'DAL/updateRaiting.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send(query);
+    xhr.onreadystatechange = function() { // Ждём ответа от сервера
+        if (xhr.readyState == 4) { // Ответ пришёл
+            if(xhr.status == 200) { // Сервер вернул код 200 (что хорошо)
+                var data = xhr.responseText; // Выводим ответ сервера
+                document.getElementById("edits").innerHTML = data;
+            }
+        }
+    };
+}

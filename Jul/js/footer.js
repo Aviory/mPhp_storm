@@ -5,11 +5,12 @@ function init() {
     getFooterTime();
     getSumRecipes();
     getPaintBroad();
+    getBackgroundImage();
 }
 function footerTimeSet() {
     var d    = new Date();
     var day  = d.getDate();
-    var month= d.getMonth() + 1;
+    var month= d.getMonth();
     var year = d.getFullYear();
     var h    = d.getHours();
     var m    = d.getMinutes();
@@ -55,4 +56,23 @@ function getSumRecipes() {
             }
         }
     };
+}
+function getBackgroundImage() {
+    var d    = new Date();
+    var h    = d.getHours();
+    if(h>=5 && h<8){
+        document.body.style.backgroundImage = "url(res/timeImg5-8.jpg)";
+    }
+    if(h>=8 && h<11){
+        document.body.style.backgroundImage = "url(res/timeImg8-11.jpg)";
+    }
+    if(h>=11 && h<16){
+        document.body.style.backgroundImage = "url(res/timeImg11-16.jpg)";
+    }
+    if(h>=16 && h<21){
+        document.body.style.backgroundImage = "url(res/timeImg16-21.jpg)";
+    }
+    if(h>=21 || h>=0 && h<5){
+        document.body.style.backgroundImage = "url(res/timeImg21-5.jpg)";
+    }
 }
