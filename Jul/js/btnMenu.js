@@ -100,12 +100,4 @@ function changeRaiting(id, value) {
     xhr.open("POST", 'DAL/updateRaiting.php', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(query);
-    xhr.onreadystatechange = function() { // Ждём ответа от сервера
-        if (xhr.readyState == 4) { // Ответ пришёл
-            if(xhr.status == 200) { // Сервер вернул код 200 (что хорошо)
-                var data = xhr.responseText; // Выводим ответ сервера
-                document.getElementById("edits").innerHTML = data;
-            }
-        }
-    };
 }
